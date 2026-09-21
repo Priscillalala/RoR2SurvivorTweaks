@@ -1,0 +1,4152 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ShaderPropertiesHelper</name>
+    </assembly>
+    <members>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.Color">
+            <summary>
+            Shallow Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.DepthColor">
+            <summary>
+            Depth Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.Depth">
+            <summary>
+            Depth
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.EnableFog">
+            <summary>
+            Enable Depth Fog
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.EdgeFade">
+            <summary>
+            Edge Fade
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.SpecColor">
+            <summary>
+            SpecularColor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.BumpMap">
+            <summary>
+            Micro Detail
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.BumpStrength">
+            <summary>
+            Bump Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.EnableLargeBump">
+            <summary>
+            Enable Large Detail
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.BumpMapLarge">
+            <summary>
+            Large Detail
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.BumpLargeStrength">
+            <summary>
+            Bump Large Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.WorldSpace">
+            <summary>
+            World UV
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.Speeds">
+            <summary>
+            Speeds
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.SpeedsLarge">
+            <summary>
+            Speeds Large
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.Distortion">
+            <summary>
+            Distortion
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.DistortionQuality">
+            <summary>
+            Distortion Quality
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.ReflectionType">
+            <summary>
+            ReflectionType
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.CubeColor">
+            <summary>
+            CubeMap Color [RGB] Intensity [A]
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.Cube">
+            <summary>
+            CubeMap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.ReflectionTex">
+            <summary>
+            Internal reflection
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.Reflection">
+            <summary>
+            Reflection
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.RimPower">
+            <summary>
+            Fresnel Angle
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.FOAM">
+            <summary>
+            Enable Foam
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.FoamColor">
+            <summary>
+            FoamColor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.FoamTex">
+            <summary>
+            Foam Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.FoamSize">
+            <summary>
+            Fade Size
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.DisplacementMode">
+            <summary>
+            Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.Amplitude">
+            <summary>
+            Amplitude
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.Frequency">
+            <summary>
+            Frequency
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.Speed">
+            <summary>
+            Wave Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.Steepness">
+            <summary>
+            Wave Steepness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.WSpeed">
+            <summary>
+            Wave Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.WDirectionAB">
+            <summary>
+            Wave1 Direction
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.WDirectionCD">
+            <summary>
+            Wave2 Direction
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DoubleSided_Editor.Smoothing">
+            <summary>
+            Smoothing
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.Color">
+            <summary>
+            Shallow Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.DepthColor">
+            <summary>
+            Depth Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.Depth">
+            <summary>
+            Depth
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.EnableFog">
+            <summary>
+            Enable Depth Fog
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.EdgeFade">
+            <summary>
+            Edge Fade
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.SpecColor">
+            <summary>
+            SpecularColor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.BumpMap">
+            <summary>
+            Micro Detail
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.BumpStrength">
+            <summary>
+            Bump Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.EnableLargeBump">
+            <summary>
+            Enable Large Detail
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.BumpMapLarge">
+            <summary>
+            Large Detail
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.BumpLargeStrength">
+            <summary>
+            Bump Large Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.WorldSpace">
+            <summary>
+            World UV
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.Speeds">
+            <summary>
+            Speeds
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.SpeedsLarge">
+            <summary>
+            Speeds Large
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.Distortion">
+            <summary>
+            Distortion
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.DistortionQuality">
+            <summary>
+            Distortion Quality
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.ReflectionType">
+            <summary>
+            ReflectionType
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.CubeColor">
+            <summary>
+            CubeMap Color [RGB] Intensity [A]
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.Cube">
+            <summary>
+            CubeMap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.ReflectionTex">
+            <summary>
+            Internal reflection
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.Reflection">
+            <summary>
+            Reflection
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.RimPower">
+            <summary>
+            Fresnel Angle
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.FOAM">
+            <summary>
+            Enable Foam
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.FoamColor">
+            <summary>
+            FoamColor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.FoamTex">
+            <summary>
+            Foam Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.FoamSize">
+            <summary>
+            Fade Size
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.DisplacementMode">
+            <summary>
+            Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.Amplitude">
+            <summary>
+            Amplitude
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.Frequency">
+            <summary>
+            Frequency
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.Speed">
+            <summary>
+            Wave Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.Steepness">
+            <summary>
+            Wave Steepness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.WSpeed">
+            <summary>
+            Wave Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.WDirectionAB">
+            <summary>
+            Wave1 Direction
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.WDirectionCD">
+            <summary>
+            Wave2 Direction
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.Smoothing">
+            <summary>
+            Smoothing
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_DoubleSided_Editor.Tess">
+            <summary>
+            Tessellation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.Color">
+            <summary>
+            Shallow Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.DepthColor">
+            <summary>
+            Depth Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.Depth">
+            <summary>
+            Depth
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.EnableFog">
+            <summary>
+            Enable Depth Fog
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.EdgeFade">
+            <summary>
+            Edge Fade
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.SpecColor">
+            <summary>
+            SpecularColor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.BumpMap">
+            <summary>
+            Micro Detail
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.BumpStrength">
+            <summary>
+            Bump Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.EnableLargeBump">
+            <summary>
+            Enable Large Detail
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.BumpMapLarge">
+            <summary>
+            Large Detail
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.BumpLargeStrength">
+            <summary>
+            Bump Large Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.WorldSpace">
+            <summary>
+            World UV
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.Speeds">
+            <summary>
+            Speeds
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.SpeedsLarge">
+            <summary>
+            Speeds Large
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.Distortion">
+            <summary>
+            Distortion
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.DistortionQuality">
+            <summary>
+            Distortion Quality
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.ReflectionType">
+            <summary>
+            ReflectionType
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.CubeColor">
+            <summary>
+            CubeMap Color [RGB] Intensity [A]
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.Cube">
+            <summary>
+            CubeMap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.ReflectionTex">
+            <summary>
+            Internal reflection
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.Reflection">
+            <summary>
+            Reflection
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.RimPower">
+            <summary>
+            Fresnel Angle
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.FOAM">
+            <summary>
+            Enable Foam
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.FoamColor">
+            <summary>
+            FoamColor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.FoamTex">
+            <summary>
+            Foam Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.FoamSize">
+            <summary>
+            Fade Size
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.DisplacementMode">
+            <summary>
+            Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.Amplitude">
+            <summary>
+            Amplitude
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.Frequency">
+            <summary>
+            Frequency
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.Speed">
+            <summary>
+            Wave Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.Steepness">
+            <summary>
+            Wave Steepness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.WSpeed">
+            <summary>
+            Wave Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.WDirectionAB">
+            <summary>
+            Wave1 Direction
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.WDirectionCD">
+            <summary>
+            Wave2 Direction
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.Smoothing">
+            <summary>
+            Smoothing
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_DX11_Editor.Tess">
+            <summary>
+            Tessellation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.Color">
+            <summary>
+            Shallow Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.DepthColor">
+            <summary>
+            Depth Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.Depth">
+            <summary>
+            Depth
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.EnableFog">
+            <summary>
+            Enable Depth Fog
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.EdgeFade">
+            <summary>
+            Edge Fade
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.SpecColor">
+            <summary>
+            SpecularColor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.BumpMap">
+            <summary>
+            Micro Detail
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.BumpStrength">
+            <summary>
+            Bump Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.EnableLargeBump">
+            <summary>
+            Enable Large Detail
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.BumpMapLarge">
+            <summary>
+            Large Detail
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.BumpLargeStrength">
+            <summary>
+            Bump Large Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.WorldSpace">
+            <summary>
+            World UV
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.Speeds">
+            <summary>
+            Speeds
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.SpeedsLarge">
+            <summary>
+            Speeds Large
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.Distortion">
+            <summary>
+            Distortion
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.DistortionQuality">
+            <summary>
+            Distortion Quality
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.ReflectionType">
+            <summary>
+            ReflectionType
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.CubeColor">
+            <summary>
+            CubeMap Color [RGB] Intensity [A]
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.Cube">
+            <summary>
+            CubeMap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.ReflectionTex">
+            <summary>
+            Internal reflection
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.Reflection">
+            <summary>
+            Reflection
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.RimPower">
+            <summary>
+            Fresnel Angle
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.FOAM">
+            <summary>
+            Enable Foam
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.FoamColor">
+            <summary>
+            FoamColor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.FoamTex">
+            <summary>
+            Foam Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.FoamSize">
+            <summary>
+            Fade Size
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.DisplacementMode">
+            <summary>
+            Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.Amplitude">
+            <summary>
+            Amplitude
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.Frequency">
+            <summary>
+            Frequency
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.Speed">
+            <summary>
+            Wave Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.Steepness">
+            <summary>
+            Wave Steepness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.WSpeed">
+            <summary>
+            Wave Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.WDirectionAB">
+            <summary>
+            Wave1 Direction
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.WDirectionCD">
+            <summary>
+            Wave2 Direction
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CalmWater_SingleSided_Editor.Smoothing">
+            <summary>
+            Smoothing
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.ProjectorCaustics_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.ProjectorCaustics_Editor.CausticTex">
+            <summary>
+            Cookie
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.ProjectorCaustics_Editor.Speed">
+            <summary>
+            Caustic Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.ProjectorCaustics_Editor.Tiling">
+            <summary>
+            Tiling
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.ProjectorCaustics_Editor.FalloffTex">
+            <summary>
+            FallOff
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.ProjectorCaustics_Editor.Size">
+            <summary>
+            Size
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.UnderWaterFog_Editor.MainTex">
+            <summary>
+            Base (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.MaskTex">
+            <summary>
+            Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.MaskNormals">
+            <summary>
+            Mask Normals?
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.MainTex">
+            <summary>
+            Albedo
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.Color">
+            <summary>
+            Albedo (Multiplier)
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.NormalTex">
+            <summary>
+            Normal
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.NormalMultiplier">
+            <summary>
+            Normal (Multiplier)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.UseAtlas">
+            <summary>
+            Use texture atlas
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.AtlasSize">
+            <summary>
+            Atlas Size
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.SpecularStrength">
+            <summary>
+            Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.SpecularExponent">
+            <summary>
+            Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.Smoothness">
+            <summary>
+            Smoothness (Multiplier)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.DecalLayer">
+            <summary>
+            Decal Layer
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.DecalBlendMode">
+            <summary>
+            Blend Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.DecalSrcBlend">
+            <summary>
+            SrcBlend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.DecalDstBlend">
+            <summary>
+            DstBlend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.NormalBlendMode">
+            <summary>
+            Normal Blend Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.AngleLimit">
+            <summary>
+            Angle Limit
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.CloudOn">
+            <summary>
+            Use Cloud Remap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.Cloud1Tex">
+            <summary>
+            Cloud 1 (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.Cloud2Tex">
+            <summary>
+            Cloud 2 (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.RemapTex">
+            <summary>
+            Color Remap Ramp (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.CutoffScroll">
+            <summary>
+            Cutoff Scroll Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousDeferredDecal_Editor.AlphaBoost">
+            <summary>
+            Alpha Boost
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousUnlitDecal_Editor.MaskTex">
+            <summary>
+            Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousUnlitDecal_Editor.MainTex">
+            <summary>
+            Albedo
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousUnlitDecal_Editor.Color">
+            <summary>
+            Albedo (Multiplier)
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousUnlitDecal_Editor.DecalBlendMode">
+            <summary>
+            Blend Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousUnlitDecal_Editor.DecalSrcBlend">
+            <summary>
+            SrcBlend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousUnlitDecal_Editor.DecalDstBlend">
+            <summary>
+            DstBlend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DecaliciousUnlitDecal_Editor.AngleLimit">
+            <summary>
+            Angle Limit
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.NGSS_ContactShadows_Editor.MainTex">
+            <summary>
+            Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.NGSS_Directional_Editor.ShadowMapTexture">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.NGSS_Directional_Editor.ODSWorldTexture">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.NGSS_FrustumShadows_Editor.MainTex">
+            <summary>
+            Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OutlineHighlightNew_Editor.OutlineColor">
+            <summary>
+            Outline Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OutlineHighlightSurf_Editor.OutlineColor">
+            <summary>
+            Outline Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DamageIndicator_Editor.MainTex">
+            <summary>
+            Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.Color">
+            <summary>
+            Tint
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.FlashColor">
+            <summary>
+            Flashing Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.FlashEnabled">
+            <summary>
+            Flash Enabled
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.Flash">
+            <summary>
+            Flash Intensity
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.StencilComp">
+            <summary>
+            Stencil Comparison
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.Stencil">
+            <summary>
+            Stencil ID
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.StencilOp">
+            <summary>
+            Stencil Operation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.StencilWriteMask">
+            <summary>
+            Stencil Write Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.StencilReadMask">
+            <summary>
+            Stencil Read Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.ColorMask">
+            <summary>
+            Color Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.FillStart">
+            <summary>
+            Bar Fill Start
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.FillEnd">
+            <summary>
+            Bar Fill End
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.Rect">
+            <summary>
+            Rect(posX, posY, width, height)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HealthBar_Editor.UseUIAlphaClip">
+            <summary>
+            Use Alpha Clip
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.SrcBlend">
+            <summary>
+            Source Blend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.DstBlend">
+            <summary>
+            Destination Blend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.TintColor">
+            <summary>
+            Tint
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.DisableRemapOn">
+            <summary>
+            Disable Remapping
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.MainTex">
+            <summary>
+            Base (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.RemapTex">
+            <summary>
+            Color Remap Ramp (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.InvFade">
+            <summary>
+            Soft Factor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.Boost">
+            <summary>
+            Brightness Boost
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.AlphaBoost">
+            <summary>
+            Alpha Boost
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.AlphaBias">
+            <summary>
+            Alpha Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.UseUV1On">
+            <summary>
+            Use UV1
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.FadeCloseOn">
+            <summary>
+            Fade when near camera
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.FadeCloseDistance">
+            <summary>
+            Fade Close Distance
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.Cull">
+            <summary>
+            Culling Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.ZTest">
+            <summary>
+            ZTest
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.DepthOffset">
+            <summary>
+            _DepthOffset
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.CloudsOn">
+            <summary>
+            Cloud Remapping
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.CloudOffsetOn">
+            <summary>
+            Distortion Clouds
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.DistortionStrength">
+            <summary>
+            Distortion Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.Cloud1Tex">
+            <summary>
+            Cloud 1 (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.Cloud2Tex">
+            <summary>
+            Cloud 2 (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.CutoffScroll">
+            <summary>
+            Cutoff Scroll Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.VertexColorOn">
+            <summary>
+            Vertex Colors
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.VertexAlphaOn">
+            <summary>
+            Luminance for Vertex Alpha
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.CalcTextureAlphaOn">
+            <summary>
+            Luminance for Texture Alpha
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.VertexOffsetOn">
+            <summary>
+            Vertex Offset
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.FresnelOn">
+            <summary>
+            Fresnel Fade
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.SkyboxOnly">
+            <summary>
+            Skybox Only
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.FresnelPower">
+            <summary>
+            Fresnel Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGCloudRemap_Editor.OffsetAmount">
+            <summary>
+            Vertex Offset Amount
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDamageNumber_Editor.TintColor">
+            <summary>
+            Tint
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDamageNumber_Editor.CritColor">
+            <summary>
+            Crit Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDamageNumber_Editor.MainTex">
+            <summary>
+            Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDamageNumber_Editor.CharacterLimit">
+            <summary>
+            Character Limit
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWater_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWater_Editor.MainTex">
+            <summary>
+            Base (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWater_Editor.NormalStrength">
+            <summary>
+            Normal Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWater_Editor.Normal1Tex">
+            <summary>
+            Normal Map 1
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWater_Editor.Normal2Tex">
+            <summary>
+            Normal Map 2
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWater_Editor.Scroll">
+            <summary>
+            Scroll Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWater_Editor.VertexOffsetStrength">
+            <summary>
+            Vertex Offset Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWater_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWater_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWater_Editor.SpecularStrength">
+            <summary>
+            Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWater_Editor.SpecularExponent">
+            <summary>
+            Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWaterEmissive1sided_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWaterEmissive1sided_Editor.MainTex">
+            <summary>
+            Base (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWaterEmissive1sided_Editor.NormalStrength">
+            <summary>
+            Normal Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWaterEmissive1sided_Editor.Normal1Tex">
+            <summary>
+            Normal Map 1
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWaterEmissive1sided_Editor.Normal2Tex">
+            <summary>
+            Normal Map 2
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWaterEmissive1sided_Editor.Scroll">
+            <summary>
+            Scroll Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWaterEmissive1sided_Editor.VertexOffsetStrength">
+            <summary>
+            Vertex Offset Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWaterEmissive1sided_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWaterEmissive1sided_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWaterEmissive1sided_Editor.SpecularStrength">
+            <summary>
+            Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistantWaterEmissive1sided_Editor.SpecularExponent">
+            <summary>
+            Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistortion_Editor.BumpMap">
+            <summary>
+            Bump Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistortion_Editor.MaskTex">
+            <summary>
+            Mask Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistortion_Editor.Magnitude">
+            <summary>
+            Magnitude
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistortion_Editor.NearFadeZeroDistance">
+            <summary>
+            Near-Fade Zero Distance
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistortion_Editor.NearFadeOneDistance">
+            <summary>
+            Near-Fade One Distance
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistortion_Editor.FarFadeOneDistance">
+            <summary>
+            Far-Fade One Distance
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistortion_Editor.FarFadeZeroDistance">
+            <summary>
+            Far-Fade Zero Distance
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistortion_Editor.DistanceModulationOn">
+            <summary>
+            Apply distance modulation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistortion_Editor.DistanceModulationMagnitude">
+            <summary>
+            Distance Modulation Magnitude
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGDistortion_Editor.InvFade">
+            <summary>
+            Soft Factor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.MainTex">
+            <summary>
+            Base (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.BumpMap">
+            <summary>
+            Normalmap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.EFFECT_HUE">
+            <summary>
+            Enable Hue Variation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.HueVariation">
+            <summary>
+            Hue Variation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.EFFECT_BUMP">
+            <summary>
+            Enable Normals
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.Scroll">
+            <summary>
+            Scroll Speed (XY), Distortion Noise Scale (ZW)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.Cutoff">
+            <summary>
+            Cutoff Alpha
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.VertexOffsetStrength">
+            <summary>
+            Vertex Offset Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.WindVector">
+            <summary>
+            Wind Offset Vector Start
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.WindVectorEnd">
+            <summary>
+            Wind Offset Vector End
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.WindRNG">
+            <summary>
+            Wind RNG (xyz=cosine scalars, w=intensity)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.TimeScale">
+            <summary>
+            Time speed scale
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.SpecularStrength">
+            <summary>
+            Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.SpecularExponent">
+            <summary>
+            Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.RotateUV">
+            <summary>
+            Rotate UVs
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.FlipV">
+            <summary>
+            Flip UV.y for wind
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.LockStart">
+            <summary>
+            Lock Center
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.LockWidth">
+            <summary>
+            Lock Radius
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.FlagRange">
+            <summary>
+            Flag Coordinate Range (xy=xMin, xMax)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.FlapLength">
+            <summary>
+            Wave Length
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGFlag_Editor.FlapLengthenOnDown">
+            <summary>
+            Wave Lengthen Down Flag
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.SrcBlendFloat">
+            <summary>
+            Source Blend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.DstBlendFloat">
+            <summary>
+            Destination Blend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.Cull">
+            <summary>
+            Cull
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.TintColor">
+            <summary>
+            Tint
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.LightWarpRamp">
+            <summary>
+            Lightwarp Ramp
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.DetailStrength">
+            <summary>
+            Detail Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.DiffuseTex">
+            <summary>
+            Diffuse Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.DiffuseDetailTex">
+            <summary>
+            Diffuse Detail Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.NormalStrength">
+            <summary>
+            Normal Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.NormalTex">
+            <summary>
+            Normal Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.NormalDetailTex">
+            <summary>
+            Normal Detail Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.SpecColor">
+            <summary>
+            Specular Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.SpecularPower">
+            <summary>
+            Specular Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.DoubleSampleFactor">
+            <summary>
+            Double Sample Factor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.AtmosphereRamp">
+            <summary>
+            Atmosphere Ramp
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.AtmosphereStrength">
+            <summary>
+            Atmosphere Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.EmissionTex">
+            <summary>
+            Emission Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.EmissionRamp">
+            <summary>
+            Emission Ramp
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.EmissionStrength">
+            <summary>
+            Emission Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGForwardPlanet_Editor.RotationSpeed">
+            <summary>
+            Rotation Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGGrass_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGGrass_Editor.MainTex">
+            <summary>
+            Base (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGGrass_Editor.Scroll">
+            <summary>
+            Scroll Speed (XY), Distortion Noise Scale (ZW)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGGrass_Editor.Cutoff">
+            <summary>
+            Cutoff Alpha
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGGrass_Editor.VertexOffsetStrength">
+            <summary>
+            Vertex Offset Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGGrass_Editor.WindVector">
+            <summary>
+            Wind Offset Vector
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGGrass_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGGrass_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGGrass_Editor.SpecularStrength">
+            <summary>
+            Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGGrass_Editor.SpecularExponent">
+            <summary>
+            Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.SrcBlendFloat">
+            <summary>
+            Source Blend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.DstBlendFloat">
+            <summary>
+            Destination Blend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.TintColor">
+            <summary>
+            Tint
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.MainTex">
+            <summary>
+            Base (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.Cloud1Tex">
+            <summary>
+            Cloud 1 (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.Cloud2Tex">
+            <summary>
+            Cloud 2 (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.RemapTex">
+            <summary>
+            Color Remap Ramp (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.CutoffScroll">
+            <summary>
+            Cutoff Scroll Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.InvFade">
+            <summary>
+            Soft Factor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.SoftPower">
+            <summary>
+            Soft Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.Boost">
+            <summary>
+            Brightness Boost
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.RimPower">
+            <summary>
+            Rim Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.RimStrength">
+            <summary>
+            Rim Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.AlphaBoost">
+            <summary>
+            Alpha Boost
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.IntersectionStrength">
+            <summary>
+            Intersection Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.Cull">
+            <summary>
+            Cull
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.FadeFromVertexColorsOn">
+            <summary>
+            Fade Alpha from Vertex Color Luminance
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGIntersectionCloudRemap_Editor.TriplanarOn">
+            <summary>
+            Enable Triplanar Projections for Clouds
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOnTop_Editor.Color">
+            <summary>
+            Color
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.TintColor">
+            <summary>
+            Tint
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.EmissionColor">
+            <summary>
+            Emission
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.MainTex">
+            <summary>
+            Base (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.NormalStrength">
+            <summary>
+            Normal Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.NormalTex">
+            <summary>
+            Normal Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.Cloud1Tex">
+            <summary>
+            Cloud 1 (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.Cloud2Tex">
+            <summary>
+            Cloud 2 (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.RemapTex">
+            <summary>
+            Color Remap Ramp (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.CutoffScroll">
+            <summary>
+            Cutoff Scroll Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.InvFade">
+            <summary>
+            Soft Factor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.AlphaBoost">
+            <summary>
+            Alpha Boost
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.Cutoff">
+            <summary>
+            Alpha Cutoff
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.SpecularStrength">
+            <summary>
+            Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.SpecularExponent">
+            <summary>
+            Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.ExtrusionStrength">
+            <summary>
+            Extrusion Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.EmissionFromAlbedo">
+            <summary>
+            Emission From Albedo
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.CloudNormalMap">
+            <summary>
+            Use NormalMap as a Cloud
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.VertexAlphaOn">
+            <summary>
+            Luminance for Vertex Alpha
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOpaqueCloudRemap_Editor.Cull">
+            <summary>
+            Cull
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOutlineHighlight_Editor.Color">
+            <summary>
+            Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOutlineHighlight_Editor.MainTex">
+            <summary>
+            Main Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGOutlineHighlight_Editor.OutlineMap">
+            <summary>
+            Occlusion Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGScopeShader_Editor.ScopeMap">
+            <summary>
+            Scope Distortion (R), Scope Tint (G)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGScopeShader_Editor.Scale">
+            <summary>
+            Scale
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGScopeShader_Editor.DistortionStrength">
+            <summary>
+            Distortion Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGScopeShader_Editor.TintStrength">
+            <summary>
+            Tint Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGScopeShader_Editor.Color">
+            <summary>
+            Tint
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGScopeShader_Editor.StencilComp">
+            <summary>
+            Stencil Comparison
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGScopeShader_Editor.Stencil">
+            <summary>
+            Stencil ID
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGScopeShader_Editor.StencilOp">
+            <summary>
+            Stencil Operation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGScopeShader_Editor.StencilWriteMask">
+            <summary>
+            Stencil Write Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGScopeShader_Editor.StencilReadMask">
+            <summary>
+            Stencil Read Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGScopeShader_Editor.ColorMask">
+            <summary>
+            Color Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGScopeShader_Editor.UseUIAlphaClip">
+            <summary>
+            Use Alpha Clip
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.MainTex">
+            <summary>
+            Base (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.NormalStrength">
+            <summary>
+            Normal Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.NormalTex">
+            <summary>
+            Normal Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.SpecularStrength">
+            <summary>
+            Base Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.SpecularExponent">
+            <summary>
+            Base Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.Smoothness">
+            <summary>
+            Base Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.SnowTex">
+            <summary>
+            Snow Texture (RGB) Depth (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.SnowNormalTex">
+            <summary>
+            Snow Normal Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.SnowSpecularStrength">
+            <summary>
+            Snow Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.SnowSpecularExponent">
+            <summary>
+            Snow Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.SnowSmoothness">
+            <summary>
+            Snow Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.SnowBias">
+            <summary>
+            Snow Y Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.Depth">
+            <summary>
+            Blend Depth
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.TriplanarOn">
+            <summary>
+            Enable Snow Triplanar Projection
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.TriplanarTextureFactor">
+            <summary>
+            Triplanar Projection Texture Factor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.GradientBiasOn">
+            <summary>
+            Enable World-Size Gradient Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.GradientBiasVector">
+            <summary>
+            World-Size Gradient Bias Vector
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.DirtOn">
+            <summary>
+            Enable Blue-Channel Dirt
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.DirtTex">
+            <summary>
+            Dirt Texture (RGB) Depth (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.DirtNormalTex">
+            <summary>
+            Dirt Normal Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.DirtBias">
+            <summary>
+            Dirt Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.DirtSpecularStrength">
+            <summary>
+            Dirt Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.DirtSpecularExponent">
+            <summary>
+            Dirt Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.DirtSmoothness">
+            <summary>
+            Dirt Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.DitherOn">
+            <summary>
+            Enable Dither
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.IgnoreBiasOn">
+            <summary>
+            Ignore Alpha Weights
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.BinaryBlendOn">
+            <summary>
+            Blend Weights Binarily
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.SnowOn">
+            <summary>
+            Enable Snow Microfacets
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.ForceSpecOn">
+            <summary>
+            Ignore Diffuse Alpha for Speculars
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSnowTopped_Editor.VertexColorOn">
+            <summary>
+            Use Vertex Colors for Weights
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSobelBuffer_Editor.Color">
+            <summary>
+            Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSobelBuffer_Editor.MainTex">
+            <summary>
+            Main Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.Color">
+            <summary>
+            Color
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.MainTex">
+            <summary>
+            Albedo (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.EmissionTex">
+            <summary>
+            Emission (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.EmissionPower">
+            <summary>
+            Emission Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.Normal">
+            <summary>
+            Normal
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.SpecularStrength">
+            <summary>
+            Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.SpecularExponent">
+            <summary>
+            Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.Height1">
+            <summary>
+            Height 1
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.Height2">
+            <summary>
+            Height 2
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.HeightStrength">
+            <summary>
+            Height Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.HeightBias">
+            <summary>
+            Height Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.Parallax">
+            <summary>
+            Parallax
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.ScrollSpeed">
+            <summary>
+            Height Scroll Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.Cull">
+            <summary>
+            Cull
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGSolidParallax_Editor.ClipOn">
+            <summary>
+            Alpha Clip
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.EnableCutout">
+            <summary>
+            Cutout
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.MainTex">
+            <summary>
+            Base (RGB) Specular Scale (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.NormalStrength">
+            <summary>
+            Normal Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.NormalTex">
+            <summary>
+            Normal Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.EmColor">
+            <summary>
+            Emission Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.EmTex">
+            <summary>
+            Emission Tex (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.EmPower">
+            <summary>
+            Emission Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.SecondarySmoothness">
+            <summary>
+            Smoothness for Vertex Color Override
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.ForceSpecOn">
+            <summary>
+            Ignore Diffuse Alpha for Speculars
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.DecalLayer">
+            <summary>
+            Decal Layer
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.SpecularStrength">
+            <summary>
+            Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.SpecularExponent">
+            <summary>
+            Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.Cull">
+            <summary>
+            Cull
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.DitherOn">
+            <summary>
+            Enable Dither
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FadeBias">
+            <summary>
+            Fade Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FEON">
+            <summary>
+            Enable Fresnel Emission
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.DoubleColorsOn">
+            <summary>
+            Use Vertex Colors as mask for Fresnel mask and flowmap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FresnelRamp">
+            <summary>
+            Fresnel Ramp
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FresnelPower">
+            <summary>
+            Fresnel Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FresnelMask">
+            <summary>
+            Fresnel Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FresnelBoost">
+            <summary>
+            Fresnel Boost
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.PrintOn">
+            <summary>
+            Enable Printing
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.SliceHeight">
+            <summary>
+            Slice Height
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.SliceBandHeight">
+            <summary>
+            Print Band Height
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.SliceAlphaDepth">
+            <summary>
+            Print Alpha Depth
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.SliceAlphaTex">
+            <summary>
+            Print Alpha Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.PrintBoost">
+            <summary>
+            Print Color Boost
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.PrintBias">
+            <summary>
+            Print Alpha Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.PrintEmissionToAlbedoLerp">
+            <summary>
+            Print Emission to Albedo Lerp
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.PrintDirection">
+            <summary>
+            Print Direction
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.PrintRamp">
+            <summary>
+            Print Ramp
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.EliteBrightnessMin">
+            <summary>
+            Elite Brightness, Min
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.EliteBrightnessMax">
+            <summary>
+            Elite Brightness, Max
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.SplatmapOn">
+            <summary>
+            Enable Splatmap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.ColorsOn">
+            <summary>
+            Use Vertex Colors Instead
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.Depth">
+            <summary>
+            Blend Depth
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.SplatmapTex">
+            <summary>
+            Splatmap Tex (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.SplatmapTileScale">
+            <summary>
+            Splatmap Tile Scale
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.GreenChannelTex">
+            <summary>
+            Green Channel Albedo (RGB) Specular Scale (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.GreenChannelNormalTex">
+            <summary>
+            Green Channel Normal Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.GreenChannelSmoothness">
+            <summary>
+            Green Channel Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.GreenChannelBias">
+            <summary>
+            Green Channel Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.BlueChannelTex">
+            <summary>
+            Blue Channel Albedo  Specular Scale (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.BlueChannelNormalTex">
+            <summary>
+            Blue Channel Normal Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.BlueChannelSmoothness">
+            <summary>
+            Blue Channel Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.BlueChannelBias">
+            <summary>
+            Blue Channel Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FlowmapOn">
+            <summary>
+            Enable Flowmap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FlowTex">
+            <summary>
+            Flow Vector (RG), Noise (B)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FlowHeightmap">
+            <summary>
+            Flow Heightmap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FlowHeightRamp">
+            <summary>
+            Flow Ramp
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FlowHeightBias">
+            <summary>
+            Flow Height Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FlowHeightPower">
+            <summary>
+            Flow Height Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FlowEmissionStrength">
+            <summary>
+            Flow Height Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FlowSpeed">
+            <summary>
+            Flow Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FlowMaskStrength">
+            <summary>
+            Mask Flow Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FlowNormalStrength">
+            <summary>
+            Normal Flow Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FlowTextureScaleFactor">
+            <summary>
+            Flow Texture Scale Factor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.LimbRemovalOn">
+            <summary>
+            Enable Limb Removal
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.LimbPrimeMask">
+            <summary>
+            Limb Prime Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandard_Editor.FlashColor">
+            <summary>
+            Flash Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.Cull">
+            <summary>
+            Cull
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.EnableCutout">
+            <summary>
+            Enable Cutout
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.DecalLayer">
+            <summary>
+            Decal Layer
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.BaseTex">
+            <summary>
+            Base Texture (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.BaseTex_TilingOffset">
+            <summary>
+            Base Texture Tiling and Offset
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.BaseTexScrollSpeed">
+            <summary>
+            Base Texture Scroll Speed (XY)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.NormalTex">
+            <summary>
+            Normal Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.NormalStrength">
+            <summary>
+            Normal Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.SecondarySmoothness">
+            <summary>
+            Smoothness for Vertex Color Override
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.SpecularStrength">
+            <summary>
+            Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.SpecularExponent">
+            <summary>
+            Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.ForceSpecOn">
+            <summary>
+            Ignore Diffuse Alpha for Speculars
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.EmColor">
+            <summary>
+            Emission Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.EmTex">
+            <summary>
+            Emission Texture (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.EmPower">
+            <summary>
+            Emission Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.EmBoost">
+            <summary>
+            Emission Saturation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.ScrollTex">
+            <summary>
+            Scroll Texture (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.TexScrollSpeed">
+            <summary>
+            Emission Texture Scroll Speed (XY)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.InnerColor">
+            <summary>
+            Inner Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.InnerColorIntensity">
+            <summary>
+            Inner Color Intensity
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.flipVerticalMode">
+            <summary>
+            Flip Gradient Direction
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.ModelHeight">
+            <summary>
+            Model Height
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.VertColor">
+            <summary>
+            Vertical Effect Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.GradientCenter">
+            <summary>
+            Gradient Center Position
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.GradientWidth">
+            <summary>
+            Transition Zone Width
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.GradientSmoothness">
+            <summary>
+            Gradient Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FEON">
+            <summary>
+            Enable Fresnel Emission
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.DoubleColorsOn">
+            <summary>
+            Use Vertex Colors as mask for Fresnel mask and flowmap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FresnelRamp">
+            <summary>
+            Fresnel Ramp
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FresnelPower">
+            <summary>
+            Fresnel Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FresnelMask">
+            <summary>
+            Fresnel Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FresnelBoost">
+            <summary>
+            Fresnel Boost
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.PrintOn">
+            <summary>
+            Enable Printing
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.PrintRamp">
+            <summary>
+            Print Ramp
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.SliceHeight">
+            <summary>
+            Slice Height
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.SliceBandHeight">
+            <summary>
+            Print Band Height
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.SliceAlphaDepth">
+            <summary>
+            Print Alpha Depth
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.SliceAlphaTex">
+            <summary>
+            Print Alpha Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.PrintBoost">
+            <summary>
+            Print Color Boost
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.PrintBias">
+            <summary>
+            Print Alpha Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.PrintEmissionToAlbedoLerp">
+            <summary>
+            Print Emission to Albedo Lerp
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.PrintDirection">
+            <summary>
+            Print Direction
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FlowmapOn">
+            <summary>
+            Enable Flowmap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FlowTex">
+            <summary>
+            Flow Vector (RG), Noise (B)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FlowHeightmap">
+            <summary>
+            Flow Heightmap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FlowHeightRamp">
+            <summary>
+            Flow Ramp
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FlowSpeed">
+            <summary>
+            Flow Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FlowTextureScaleFactor">
+            <summary>
+            Flow Texture Scale Factor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FlowHeightBias">
+            <summary>
+            Flow Height Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FlowHeightPower">
+            <summary>
+            Flow Height Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FlowEmissionStrength">
+            <summary>
+            Flow Height Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FlowMaskStrength">
+            <summary>
+            Mask Flow Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FlowNormalStrength">
+            <summary>
+            Normal Flow Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.EliteBrightnessMin">
+            <summary>
+            Elite Brightness, Min
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.EliteBrightnessMax">
+            <summary>
+            Elite Brightness, Max
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.LimbRemovalOn">
+            <summary>
+            Enable Limb Removal
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.LimbPrimeMask">
+            <summary>
+            Limb Prime Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardTextureScrolling_Editor.FlashColor">
+            <summary>
+            Flash Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.BumpMap">
+            <summary>
+            Bump Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.MaskTex">
+            <summary>
+            Mask Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.Magnitude">
+            <summary>
+            Magnitude
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.DistortionColor">
+            <summary>
+            Distortion Color
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.OpacityColor">
+            <summary>
+            Opacity Color
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.Opacity">
+            <summary>
+            Opacity
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.NearFadeZeroDistance">
+            <summary>
+            Near-Fade Zero Distance
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.NearFadeOneDistance">
+            <summary>
+            Near-Fade One Distance
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.FarFadeOneDistance">
+            <summary>
+            Far-Fade One Distance
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.FarFadeZeroDistance">
+            <summary>
+            Far-Fade Zero Distance
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.DistanceModulationOn">
+            <summary>
+            Apply distance modulation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.DistanceModulationMagnitude">
+            <summary>
+            Distance Modulation Magnitude
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.InvFade">
+            <summary>
+            Soft Factor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGStandardWithDistortion_Editor.Cull">
+            <summary>
+            Cull
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.ColorsOn">
+            <summary>
+            Use Vertex Colors Instead
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.MixColorsOn">
+            <summary>
+            Mix Vertex Colors with Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.MaskOn">
+            <summary>
+            Use Alpha Channels as Weight Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.VerticalBiasOn">
+            <summary>
+            Bias Green Channel to Vertical
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.DoublesampleOn">
+            <summary>
+            Double Sample UVs
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.NormalTex">
+            <summary>
+            Normal Tex (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.NormalStrength">
+            <summary>
+            Normal Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.DecalLayer">
+            <summary>
+            Decal Layer
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.Cull">
+            <summary>
+            Cull
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.TextureFactor">
+            <summary>
+            Texture Factor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.Depth">
+            <summary>
+            Blend Depth
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.SplatmapTex">
+            <summary>
+            Splatmap Tex (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.RedChannelTopTex">
+            <summary>
+            Red Channel Top Albedo (RGB) Specular Scale (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.RedChannelSideTex">
+            <summary>
+            Red Channel Side Albedo (RGB) Specular Scale (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.RedChannelSmoothness">
+            <summary>
+            Red Channel Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.RedChannelSpecularStrength">
+            <summary>
+            Red Channel Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.RedChannelSpecularExponent">
+            <summary>
+            Red Channel Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.RedChannelBias">
+            <summary>
+            Red Channel Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.GreenChannelTex">
+            <summary>
+            Green Channel Albedo (RGB) Specular Scale (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.GreenChannelSmoothness">
+            <summary>
+            Green Channel Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.GreenChannelSpecularStrength">
+            <summary>
+            Green Channel Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.GreenChannelSpecularExponent">
+            <summary>
+            Green Channel Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.GreenChannelBias">
+            <summary>
+            Green Channel Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.BlueChannelTex">
+            <summary>
+            Blue Channel Albedo  Specular Scale (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.BlueChannelSmoothness">
+            <summary>
+            Blue Channel Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.BlueChannelSpecularStrength">
+            <summary>
+            Blue Channel Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.BlueChannelSpecularExponent">
+            <summary>
+            Blue Channel Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.BlueChannelBias">
+            <summary>
+            Blue Channel Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGTriplanarTerrainBlend_Editor.SnowOn">
+            <summary>
+            Treat G.Channel as Snow
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.RemapRamp">
+            <summary>
+            Remap Ramp
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.AlphaBoost">
+            <summary>
+            Alpha Boost
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.LightenFactor">
+            <summary>
+            Alpha Lighten Factor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.TrueAlpha">
+            <summary>
+            True Alpha
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.OverlayTex">
+            <summary>
+            Overlay Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.PatternPixelSize">
+            <summary>
+            Pattern Pixel Size
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.PatternStrength">
+            <summary>
+            Pattern Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.PatternPanningSpeed">
+            <summary>
+            Pattern Panning Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.DoubleSampleOn">
+            <summary>
+            Double Sample Pattern
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.Color">
+            <summary>
+            Tint
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.StencilComp">
+            <summary>
+            Stencil Comparison
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.Stencil">
+            <summary>
+            Stencil ID
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.StencilOp">
+            <summary>
+            Stencil Operation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.StencilWriteMask">
+            <summary>
+            Stencil Write Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.StencilReadMask">
+            <summary>
+            Stencil Read Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.ColorMask">
+            <summary>
+            Color Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIAnimateAlpha_Editor.UseUIAlphaClip">
+            <summary>
+            Use Alpha Clip
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIBarRemap_Editor.MainTex">
+            <summary>
+            Gradient (R) Mask (G)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIBarRemap_Editor.RemapTex">
+            <summary>
+            Color Remap Ramp (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIBarRemap_Editor.GradientScale">
+            <summary>
+            Gradient Scale
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIBarRemap_Editor.PingPong">
+            <summary>
+            PingPong Ramp
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIBlur_Editor.Radius">
+            <summary>
+            Radius
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUICustomBlend_Editor.SrcBlend">
+            <summary>
+            Source Blend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUICustomBlend_Editor.DstBlend">
+            <summary>
+            Destination Blend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUICustomBlend_Editor.Color">
+            <summary>
+            Tint
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUICustomBlend_Editor.StencilComp">
+            <summary>
+            Stencil Comparison
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUICustomBlend_Editor.Stencil">
+            <summary>
+            Stencil ID
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUICustomBlend_Editor.StencilOp">
+            <summary>
+            Stencil Operation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUICustomBlend_Editor.StencilWriteMask">
+            <summary>
+            Stencil Write Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUICustomBlend_Editor.StencilReadMask">
+            <summary>
+            Stencil Read Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUICustomBlend_Editor.ColorMask">
+            <summary>
+            Color Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUICustomBlend_Editor.UseUIAlphaClip">
+            <summary>
+            Use Alpha Clip
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIIgnoreZ_Editor.MainTex">
+            <summary>
+            Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIOverbrighten_Editor.Color">
+            <summary>
+            Tint
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIOverbrighten_Editor.OverbrightenScale">
+            <summary>
+            Overbrighten Scale
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIOverbrighten_Editor.StencilComp">
+            <summary>
+            Stencil Comparison
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIOverbrighten_Editor.Stencil">
+            <summary>
+            Stencil ID
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIOverbrighten_Editor.StencilOp">
+            <summary>
+            Stencil Operation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIOverbrighten_Editor.StencilWriteMask">
+            <summary>
+            Stencil Write Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIOverbrighten_Editor.StencilReadMask">
+            <summary>
+            Stencil Read Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIOverbrighten_Editor.ColorMask">
+            <summary>
+            Color Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGUIOverbrighten_Editor.UseUIAlphaClip">
+            <summary>
+            Use Alpha Clip
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGVertexOnly_Editor.TintColor">
+            <summary>
+            AAH
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGVisionLimit_Editor.Origin">
+            <summary>
+            Effect Origin
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGVisionLimit_Editor.RangeEnd">
+            <summary>
+            Range Start
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGVisionLimit_Editor.Color">
+            <summary>
+            Tint
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.MainTex">
+            <summary>
+            Base (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.NormalTex">
+            <summary>
+            Normal Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.NormalStrength">
+            <summary>
+            Normal Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.VertexOffsetStrength">
+            <summary>
+            Vertex Offset Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.PerlinScale">
+            <summary>
+            Perlin Scale
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.Cutoff">
+            <summary>
+            Alpha Cutoff
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.FoamTex">
+            <summary>
+            Foam Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.Depth">
+            <summary>
+            Blend Depth
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.Speed">
+            <summary>
+            Water Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.SpecularStrength">
+            <summary>
+            Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWaterfall_Editor.SpecularExponent">
+            <summary>
+            Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWavyCloth_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWavyCloth_Editor.Cutoff">
+            <summary>
+            Alpha Cutoff Value
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWavyCloth_Editor.MainTex">
+            <summary>
+            Base (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWavyCloth_Editor.ScrollingNormalMap">
+            <summary>
+            Scrolling Normal Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWavyCloth_Editor.NormalStrength">
+            <summary>
+            Normal Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWavyCloth_Editor.Scroll">
+            <summary>
+            Scroll Speed (XY), Distortion Noise Scale (ZW)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWavyCloth_Editor.VertexOffsetStrength">
+            <summary>
+            Vertex Offset Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWavyCloth_Editor.WindVector">
+            <summary>
+            Wind Offset Vector
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWavyCloth_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWavyCloth_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWavyCloth_Editor.SpecularStrength">
+            <summary>
+            Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWavyCloth_Editor.SpecularExponent">
+            <summary>
+            Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.HGWavyCloth_Editor.EnableVertexColorDistortion">
+            <summary>
+            Use Vertex R channel for distortion strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Internal_DeferredReflections_Editor.SrcBlend">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Internal_DeferredReflections_Editor.DstBlend">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Internal_DeferredReflectionsCustom_Editor.SrcBlend">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Internal_DeferredReflectionsCustom_Editor.DstBlend">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Internal_DeferredShadingCustom_Editor.LightTexture0">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Internal_DeferredShadingCustom_Editor.LightTextureB0">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Internal_DeferredShadingCustom_Editor.ShadowMapTexture">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Internal_DeferredShadingCustom_Editor.SrcBlend">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Internal_DeferredShadingCustom_Editor.DstBlend">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Internal_ScreenSpaceShadows_Cheaper_Editor.ShadowMapTexture">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Internal_ScreenSpaceShadows_Cheaper_Editor.ODSWorldTexture">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.MobileBlur_Editor.MainTex">
+            <summary>
+            Base (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.MobileBlur_Editor.Bloom">
+            <summary>
+            Bloom (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeBillboard_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeBillboard_Editor.HueVariation">
+            <summary>
+            Hue Variation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeBillboard_Editor.MainTex">
+            <summary>
+            Base (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeBillboard_Editor.BumpMap">
+            <summary>
+            Normalmap
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeBillboard_Editor.Cutoff">
+            <summary>
+            Alpha cutoff
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeBillboard_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeBillboard_Editor.SpecularStrength">
+            <summary>
+            Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeBillboard_Editor.SpecularExponent">
+            <summary>
+            Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeBillboard_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeBillboard_Editor.WindQuality">
+            <summary>
+            Wind Quality
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeBillboard_Editor.EmissionOn">
+            <summary>
+            Enable Emission
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeBillboard_Editor.EmissionTex">
+            <summary>
+            Emission Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeBillboard_Editor.EmissionTint">
+            <summary>
+            Emission Tint
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.HueVariation">
+            <summary>
+            Hue Variation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.MainTex">
+            <summary>
+            Base (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.DetailTex">
+            <summary>
+            Detail
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.BumpMap">
+            <summary>
+            Normal Map
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.Cutoff">
+            <summary>
+            Alpha Cutoff
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.Smoothness">
+            <summary>
+            Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.SpecularStrength">
+            <summary>
+            Specular Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.SpecularExponent">
+            <summary>
+            Specular Exponent
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.EmissionOn">
+            <summary>
+            Enable Emission
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.EmissionTex">
+            <summary>
+            Emission Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.EmissionTint">
+            <summary>
+            Emission Tint
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.RampInfo">
+            <summary>
+            Ramp Choice
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.Cull">
+            <summary>
+            Cull
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.SpeedTreeCustom_Editor.WindQuality">
+            <summary>
+            Wind Quality
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TreeSoftOcclusionBark_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TreeSoftOcclusionBark_Editor.MainTex">
+            <summary>
+            Main Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TreeSoftOcclusionBark_Editor.BaseLight">
+            <summary>
+            Base Light
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TreeSoftOcclusionBark_Editor.AO">
+            <summary>
+            Amb. Occlusion
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TreeSoftOcclusionLeaves_Editor.Color">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TreeSoftOcclusionLeaves_Editor.MainTex">
+            <summary>
+            Main Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TreeSoftOcclusionLeaves_Editor.Cutoff">
+            <summary>
+            Alpha cutoff
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TreeSoftOcclusionLeaves_Editor.BaseLight">
+            <summary>
+            Base Light
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TreeSoftOcclusionLeaves_Editor.AO">
+            <summary>
+            Amb. Occlusion
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TreeSoftOcclusionLeaves_Editor.Occlusion">
+            <summary>
+            Dir Occlusion
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Fill_Linear_Editor.MainTex">
+            <summary>
+            Base (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Fill_Linear_Editor.Color">
+            <summary>
+            Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Fill_Linear_Editor.Center">
+            <summary>
+            Center
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.Fill_Linear_Editor.FillRate">
+            <summary>
+            FillRate
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.SrcBlend">
+            <summary>
+            Source Blend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.DstBlend">
+            <summary>
+            Destination Blend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.TintColor">
+            <summary>
+            Tint
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.DisableRemapOn">
+            <summary>
+            Disable Remapping
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.MainTex">
+            <summary>
+            Base (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.RemapTex">
+            <summary>
+            Color Remap Ramp (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.InvFade">
+            <summary>
+            Soft Factor
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.Boost">
+            <summary>
+            Brightness Boost
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.AlphaBoost">
+            <summary>
+            Alpha Boost
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.AlphaBias">
+            <summary>
+            Alpha Bias
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.FadeCloseDistance">
+            <summary>
+            Fade Close Distance
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.Cull">
+            <summary>
+            Culling Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.ZTest">
+            <summary>
+            ZTest
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.DepthOffset">
+            <summary>
+            _DepthOffset
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.ZWriteMode">
+            <summary>
+            ZWrite Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.CloudOffsetOn">
+            <summary>
+            Distortion Clouds
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.DistortionStrength">
+            <summary>
+            Distortion Strength
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.Cloud1Tex">
+            <summary>
+            Cloud 1 (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.Cloud2Tex">
+            <summary>
+            Cloud 2 (RGB) Trans (A)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.CutoffScroll">
+            <summary>
+            Cutoff Scroll Speed
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.VertexColorOn">
+            <summary>
+            Vertex Colors
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.CalcTextureAlphaOn">
+            <summary>
+            Luminance for Texture Alpha
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.FresnelOn">
+            <summary>
+            Fresnel Fade
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.CloudRemapSimplified_Editor.FresnelPower">
+            <summary>
+            Fresnel Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.TintColor">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.MainTex">
+            <summary>
+            Inner Effect Tex (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.FadeCloseDistance">
+            <summary>
+            Fade Close Distance
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.Cull">
+            <summary>
+            Culling Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.ZTest">
+            <summary>
+            ZTest
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.RemapTex">
+            <summary>
+            Color Remap Ramp (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.Color">
+            <summary>
+            Inner Effect Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.EmColor">
+            <summary>
+            Emission Color
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.EmTex">
+            <summary>
+            Emission Tex (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.EmPower">
+            <summary>
+            Emission Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.EmBoost">
+            <summary>
+            Emission Saturation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.ScrollTex">
+            <summary>
+            Inline Tex Effect (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.TexScrollSpeed">
+            <summary>
+            Inline Tex Effect Scroll Speed (XY)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.BaseTex_TilingOffset">
+            <summary>
+            Inner Texture Tiling (X,Y) and Offset (Z,W)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.BaseTexScrollSpeed">
+            <summary>
+            Inner Texture Scroll Speed (XY)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.WireframeColor">
+            <summary>
+            Wireframe Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.WireframeThickness">
+            <summary>
+            Wireframe Thickness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.WireframeSmoothing">
+            <summary>
+            Wireframe Smoothing
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.WireframeOnly">
+            <summary>
+            Wireframe Only
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.flipVerticalMode">
+            <summary>
+            Flip Gradient Direction
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.ModelHeight">
+            <summary>
+            Model Height
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.VertColor">
+            <summary>
+            Vertical Effect Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.GradientCenter">
+            <summary>
+            Gradient Center Position
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.GradientWidth">
+            <summary>
+            Transition Zone Width
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.GradientSmoothness">
+            <summary>
+            Gradient Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.LimbRemovalOn">
+            <summary>
+            Enable Limb Removal
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.LimbPrimeMask">
+            <summary>
+            Limb Prime Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.OpaqueTextureScrolling_Editor.Cutoff">
+            <summary>
+            Alpha Cutoff
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.BlendMode">
+            <summary>
+            Blend Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.SrcBlend">
+            <summary>
+            Source Blend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.DstBlend">
+            <summary>
+            Destination Blend
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.TintColor">
+            <summary>
+            Main Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.MainTex">
+            <summary>
+            Inner Effect Tex (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.FadeCloseDistance">
+            <summary>
+            Fade Close Distance
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.Cull">
+            <summary>
+            Culling Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.ZTest">
+            <summary>
+            ZTest
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.ZWriteMode">
+            <summary>
+            ZWrite Mode
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.RemapTex">
+            <summary>
+            Color Remap Ramp (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.Color">
+            <summary>
+            Inner Effect Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.EmColor">
+            <summary>
+            Emission Color
+            High dynamic range (HDR) color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.EmTex">
+            <summary>
+            Emission Tex (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.EmPower">
+            <summary>
+            Emission Power
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.EmBoost">
+            <summary>
+            Emission Saturation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.ScrollTex">
+            <summary>
+            Inline Tex Effect (RGB)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.TexScrollSpeed">
+            <summary>
+            Inline Tex Effect Scroll Speed (XY)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.BaseTex_TilingOffset">
+            <summary>
+            Inner Texture Tiling (X,Y) and Offset (Z,W)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.BaseTexScrollSpeed">
+            <summary>
+            Inner Texture Scroll Speed (XY)
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.WireframeColor">
+            <summary>
+            Wireframe Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.WireframeThickness">
+            <summary>
+            Wireframe Thickness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.WireframeSmoothing">
+            <summary>
+            Wireframe Smoothing
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.WireframeOnly">
+            <summary>
+            Wireframe Only
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.flipVerticalMode">
+            <summary>
+            Flip Gradient Direction
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.ModelHeight">
+            <summary>
+            Model Height
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.VertColor">
+            <summary>
+            Vertical Effect Color
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.GradientCenter">
+            <summary>
+            Gradient Center Position
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.GradientWidth">
+            <summary>
+            Transition Zone Width
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.GradientSmoothness">
+            <summary>
+            Gradient Smoothness
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.LimbRemovalOn">
+            <summary>
+            Enable Limb Removal
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.LimbPrimeMask">
+            <summary>
+            Limb Prime Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TransparentTextureScrolling_Editor.Cutoff">
+            <summary>
+            Alpha Cutoff
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.DownTent_Editor.MainTex">
+            <summary>
+            Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.EfficientBlur_Editor.MainTex">
+            <summary>
+            Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.FillCrop_Editor.MainTex">
+            <summary>
+            Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.QuickDumbBlur_Editor.MainTex">
+            <summary>
+            Texture
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.QuickDumbBlur_Editor.VertFlip">
+            <summary>
+            Flip Vertical
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TranslucentImage_Editor.Vibrancy">
+            <summary>
+            Vibrancy
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TranslucentImage_Editor.Flatten">
+            <summary>
+            Flatten
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TranslucentImage_Editor.StencilComp">
+            <summary>
+            Stencil Comparison
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TranslucentImage_Editor.Stencil">
+            <summary>
+            Stencil ID
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TranslucentImage_Editor.StencilOp">
+            <summary>
+            Stencil Operation
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TranslucentImage_Editor.StencilWriteMask">
+            <summary>
+            Stencil Write Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TranslucentImage_Editor.StencilReadMask">
+            <summary>
+            Stencil Read Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TranslucentImage_Editor.ColorMask">
+            <summary>
+            Color Mask
+            </summary>
+        </member>
+        <member name="P:MaterialEditors.TranslucentImage_Editor.UseUIAlphaClip">
+            <summary>
+            Use Alpha Clip
+            </summary>
+        </member>
+    </members>
+</doc>

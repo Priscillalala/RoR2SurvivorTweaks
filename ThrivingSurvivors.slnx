@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ThrivingSurvivors/ThrivingSurvivors.csproj" />
+  <Project Path="ThrivingSurvivorsDocsGen/ThrivingSurvivorsDocsGen.csproj" Id="83cd74f4-3d0c-449e-a3d1-34cd9a08a8b2" />
+</Solution>

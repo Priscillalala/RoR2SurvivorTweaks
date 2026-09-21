@@ -1,0 +1,8 @@
+{
+	"strings": {
+		"GROOVE_MERC_SECONDARY_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Cooldown: <style=cIsUtility>2.5s</style> ⇒ <style=cIsUtility>3s</style></style></style>",
+		"GROOVE_MERC_SECONDARY_ALT1_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Cooldown: <style=cIsUtility>2.5s</style> ⇒ <style=cIsUtility>3s</style></style></style>",
+		"GROOVE_MERC_UTILITY_ALT1_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Cooldown: <style=cIsUtility>2.5s</style> ⇒ <style=cIsUtility>3s</style></style></style>",
+		"GROOVE_MERC_SPECIAL_ALT1_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Cooldown: <style=cIsUtility>6s</style> ⇒ <style=cIsUtility>7s</style></style><style=GrooveDiffItem>Blades Attack Count: <style=cIsDamage>8</style> ⇒ <style=cIsDamage>7</style></style><style=GrooveDiffItem>Blades attack rate now <style=cIsDamage>scales with attack speed</style></style></style></style>"
+	}
+}

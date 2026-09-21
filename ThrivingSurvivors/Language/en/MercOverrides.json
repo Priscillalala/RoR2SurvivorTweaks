@@ -1,0 +1,5 @@
+{
+	"strings": {
+		"MERC_UTILITY_ALT1_DESCRIPTION": "<style=cIsDamage>Stunning</style>. Dash forward. After <style=cIsUtility>1 second</style>, split <style=cIsDamage>800% damage</style> between struck enemies and <style=cIsUtility>Expose</style> them."
+	}
+}
