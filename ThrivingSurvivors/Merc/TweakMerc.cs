@@ -79,10 +79,26 @@ public static class TweakMerc
             [nameof(Evis.duration)] = 1.15f,
             [nameof(Evis.lingeringInvincibilityDuration)] = 0.4f,
         };
+#if false
         Helpers.ModifyGameAssetAsync<GameObject>(RoR2_Base_Merc.EvisOverlapProjectile_prefab, EvisOverlapProjectile =>
         {
-            EvisOverlapProjectile.AddComponent<ProjectileOverlapUseAttackSpeed>();
-            EvisOverlapProjectile.RemoveComponentImmediate<StartEvent>(); // sets expose damage type after a delay
+            
+        });
+#endif
+        Helpers.ModifyGameAssetAsync<GameObject>(RoR2_Base_Merc.ImpactMercEvis_prefab, ImpactMercEvis =>
+        {
+            new AddComponent<RandomlyOffsetRotation>(ImpactMercEvis)
+            {
+                c = { maxAngle = 80f }
+            };
+        });
+        AssetLoader.RequestAddressableAssets
+            <GameObject>(RoR2_Base_Merc.EvisOverlapProjectile_prefab, out var EvisOverlapProjectile).And
+            <GameObject>(RoR2_Base_Merc.OmniImpactVFXSlashMercEvis_prefab, out var OmniImpactVFXSlashMercEvis);
+        AssetLoader.AssetsReady += delegate
+        {
+            EvisOverlapProjectile.Asset.AddComponent<ProjectileOverlapUseAttackSpeed>();
+            EvisOverlapProjectile.Asset.RemoveComponentImmediate<StartEvent>(); // sets expose damage type after a delay
             new ModifyComponent<ProjectileOverlapAttack>(EvisOverlapProjectile)
             {
                 c = { fireFrequency = 6f, resetInterval = 1f / 6f }
@@ -91,19 +107,18 @@ public static class TweakMerc
             {
                 c = { lifetime = 5f } // ProjectileFinalOverlapHit destroys before this
             };
+            GameObject windsFinalHitImpact = Prefab.Clone(OmniImpactVFXSlashMercEvis, "WindsFinalHitImpact");
+            new ModifyComponent<EffectComponent>(windsFinalHitImpact)
+            {
+                c = { soundName = "Play_merc_R_end" }
+            };
+            Content.ContentPack.effectDefs.Add(new EffectDef(windsFinalHitImpact));
             new AddComponent<ProjectileFinalOverlapHit>(EvisOverlapProjectile)
             {
-                c = { finalHitDamageType = DamageType.ApplyMercExpose, lifetime = 1f }
+                c = { finalHitDamageType = DamageType.ApplyMercExpose, lifetime = 1f, finalHitEffect = windsFinalHitImpact }
             };
-        });
-        Helpers.ModifyGameAssetAsync<GameObject>(RoR2_Base_Merc.ImpactMercEvis_prefab, ImpactMercEvis =>
-        {
-            new AddComponent<RandomlyOffsetRotation>(ImpactMercEvis)
-            {
-                c = { maxAngle = 80f }
-            };
-        });
-        #endregion
+        };
+#endregion
     }
 
     [HarmonyILManipulator, HarmonyPatch(typeof(EvisDash), nameof(EvisDash.FixedUpdate))]

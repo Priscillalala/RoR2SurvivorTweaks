@@ -1,7 +1,9 @@
-﻿using HG.GeneralSerializer;
+﻿using HG;
+using HG.GeneralSerializer;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
 using RoR2;
+using RoR2.ContentManagement;
 using System;
 using System.Runtime.CompilerServices;
 using UnityEngine;
@@ -18,6 +20,31 @@ public static class Helpers
         {
             whenLoaded(loadOp.Result);
         };
+    }
+
+    extension<TAsset>(NamedAssetCollection<TAsset> assetCollection)
+    {
+        public void Add(TAsset newAsset)
+        {
+            string assetName = assetCollection.nameProvider(newAsset);
+            if (assetCollection.assetToName.ContainsKey(newAsset))
+            {
+                throw new ArgumentException($"Asset {newAsset} is already registered!");
+            }
+            if (assetCollection.nameToAsset.ContainsKey(assetName))
+            {
+                throw new ArgumentException($"Asset name {assetName} is already registered!");
+            }
+            NamedAssetCollection<TAsset>.AssetInfo assetInfo = new NamedAssetCollection<TAsset>.AssetInfo
+            {
+                asset = newAsset,
+                assetName = assetName,
+            };
+            int index = Array.BinarySearch(assetCollection.assetInfos, assetInfo);
+            ArrayUtils.ArrayInsert(ref assetCollection.assetInfos, ~index, assetInfo);
+            assetCollection.nameToAsset[assetName] = newAsset;
+            assetCollection.assetToName[newAsset] = assetName;
+        }
     }
 
     extension(EntityStateConfiguration esc)

@@ -11,6 +11,7 @@ namespace ThrivingSurvivors.Core.Components;
 public class ProjectileFinalOverlapHit : MonoBehaviour
 {
     public DamageTypeCombo finalHitDamageType;
+    public GameObject finalHitEffect;
     public float lifetime = 1f;
 
     void FixedUpdate()
@@ -21,6 +22,10 @@ public class ProjectileFinalOverlapHit : MonoBehaviour
             var projectileDamage = GetComponent<ProjectileDamage>();
             projectileDamage.damageType |= finalHitDamageType;
             var projectileOverlapAttack = GetComponent<ProjectileOverlapAttack>();
+            if (finalHitEffect)
+            {
+                projectileOverlapAttack.attack.hitEffectPrefab = finalHitEffect;
+            }
             //projectileOverlapAttack.attack.impactSound = Addressables.LoadAssetAsync<NetworkSoundEventDef>(RoR2_Base_Merc.nseMercAssaulterImpact_asset).WaitForCompletion().index;
             projectileOverlapAttack.ResetOverlapAttack();
             projectileOverlapAttack.fireTimer = 0f;

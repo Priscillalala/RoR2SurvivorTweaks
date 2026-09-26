@@ -1,5 +1,6 @@
 ﻿global using Path = System.IO.Path;
 global using Plugin = ThrivingSurvivors.ThrivingSurvivorsPlugin;
+global using Content = ThrivingSurvivors.ThrivingSurvivorsContent;
 global using Random = UnityEngine.Random;
 global using RoR2BepInExPack.GameAssetPathsBetter;
 using BepInEx;
@@ -12,6 +13,7 @@ using MaterialEditors;
 using RoR2;
 using HG.Reflection;
 using ThrivingSurvivors.Merc;
+using RoR2.ContentManagement;
 
 [assembly:SearchableAttribute.OptIn]
 
@@ -37,7 +39,11 @@ public class ThrivingSurvivorsPlugin : BaseUnityPlugin
         Harmony = new Harmony(GUID);
         RuntimeDirectory = Path.GetDirectoryName(Info.Location);
 
+        ContentManager.collectContentPackProviders += add => add(new Content());
+
+        Prefab.Init();
         LanguageLoader.Init();
+        
         TweakMerc.Init();
     }
 }
