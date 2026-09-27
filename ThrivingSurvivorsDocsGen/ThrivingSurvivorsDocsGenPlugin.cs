@@ -50,45 +50,31 @@ public class ThrivingSurvivorsDocsGenPlugin : BaseUnityPlugin
             var allSkills = BodyCatalog.GetBodyPrefabSkillSlots(bodyIndex)
                 .SelectMany(x => x.skillFamily.variants)
                 .Select(x => x.skillDef);
-            StringBuilder sbSkills = new();
+            StringBuilder sbDetails = new();
+            string survivorBaseToken = survivorDef.cachedName.ToUpperInvariant();
+
+            string survivorDiffToken = $"GROOVE_{survivorBaseToken}_DIFF";
+            if (Language.english.TokenIsRegistered(survivorDiffToken))
+            {
+                string survivorDiffString = Language.english.GetLocalizedStringByToken(survivorDiffToken);
+                BuildDiffString(survivorDiffString, sbDetails);
+            }
             foreach (SkillDef skill in allSkills)
             {
-                string diffToken = skill.keywordTokens.FirstOrDefault(x => x.StartsWith("GROOVE_") && x.EndsWith("_DIFF"));
-                if (diffToken == null)
+                string skillDiffToken = skill.keywordTokens.FirstOrDefault(x => x.StartsWith("GROOVE_") && x.EndsWith("_DIFF"));
+                if (skillDiffToken == null)
                 {
                     continue;
                 }
-                string diffString = Language.english.GetLocalizedStringByToken(diffToken);
+                string skillDiffString = Language.english.GetLocalizedStringByToken(skillDiffToken);
                 string localizedSkillName = Language.english.GetLocalizedStringByToken(skill.skillNameToken);
                 string skillIconUrl = $"https://riskofrain2.wiki.gg/images/{localizedSkillName.Replace(' ', '_')}.png";
-                sbSkills.AppendLine($"### <img src=\"{skillIconUrl}\" width=\"24\"> {localizedSkillName}");
-                sbSkills.AppendLine();
-                diffString = diffString["<style=GrooveDiffKeyword>".Length..^"</style>".Length];
-                var diffItemStrings = diffString
-                    .Split(["<style=GrooveDiffItem>"], StringSplitOptions.RemoveEmptyEntries)
-                    .Select(x => x[..^"</style>".Length]);
-                foreach (string readonlyDiffItemString in diffItemStrings)
-                {
-                    string diffItemString = readonlyDiffItemString;
-                    while (true)
-                    {
-                        int tagStartIndex = diffItemString.IndexOf('<');
-                        int tagEndIndex = diffItemString.IndexOf('>');
-                        if (tagEndIndex == -1 || tagEndIndex == -1)
-                        {
-                            break;
-                        }
-                        diffItemString = diffItemString.Remove(tagStartIndex, tagEndIndex - tagStartIndex + 1);
-#if false
-                        diffItemString = diffItemString.Insert(tagStartIndex, "**");
-#endif
-                    }
-                    sbSkills.AppendLine($"- {diffItemString}");
-                }
-                sbSkills.AppendLine();
+                sbDetails.AppendLine($"### <img src=\"{skillIconUrl}\" width=\"24\"> {localizedSkillName}");
+                sbDetails.AppendLine();
+                BuildDiffString(skillDiffString, sbDetails);
             }
-            string skillsString = sbSkills.ToString();
-            if (string.IsNullOrEmpty(skillsString))
+            string detailsString = sbDetails.ToString();
+            if (string.IsNullOrEmpty(detailsString))
             {
                 continue;
             }
@@ -96,12 +82,47 @@ public class ThrivingSurvivorsDocsGenPlugin : BaseUnityPlugin
             string survivorIconUrl = $"https://riskofrain2.wiki.gg/images/{localizedSurvivorName.Replace(' ', '_')}.png";
             sbFile.AppendLine($"## <img src=\"{survivorIconUrl}\" width=\"32\"> {localizedSurvivorName}");
             sbFile.AppendLine();
+            string survivorQuoteToken = $"GROOVE_{survivorBaseToken}_QUOTE";
+            if (Language.english.TokenIsRegistered(survivorQuoteToken))
+            {
+                string survivorQuoteString = Language.english.GetLocalizedStringByToken(survivorQuoteToken);
+                survivorQuoteString = survivorQuoteString["<style=GrooveQuote>".Length..^"</style>".Length];
+                sbFile.AppendLine($"> {survivorQuoteString}");
+                sbFile.AppendLine();
+            }
             sbFile.AppendLine("<details>");
-            sbFile.AppendLine("<summary>Click to see skill details</summary>");
+            sbFile.AppendLine("<summary>Expand to see details</summary>");
             sbFile.AppendLine();
-            sbFile.Append(skillsString);
+            sbFile.Append(detailsString);
             sbFile.AppendLine("</details>");
             sbFile.AppendLine();
+        }
+
+        static void BuildDiffString(string diffString, StringBuilder sb)
+        {
+            diffString = diffString["<style=GrooveDiffKeyword>".Length..^"</style>".Length];
+            var diffItemStrings = diffString
+                .Split(["<style=GrooveDiffItem>"], StringSplitOptions.RemoveEmptyEntries)
+                .Select(x => x[..^"</style>".Length]);
+            foreach (string readonlyDiffItemString in diffItemStrings)
+            {
+                string diffItemString = readonlyDiffItemString;
+                while (true)
+                {
+                    int tagStartIndex = diffItemString.IndexOf('<');
+                    int tagEndIndex = diffItemString.IndexOf('>');
+                    if (tagEndIndex == -1 || tagEndIndex == -1)
+                    {
+                        break;
+                    }
+                    diffItemString = diffItemString.Remove(tagStartIndex, tagEndIndex - tagStartIndex + 1);
+#if false
+                        diffItemString = diffItemString.Insert(tagStartIndex, "**");
+#endif
+                }
+                sb.AppendLine($"- {diffItemString}");
+            }
+            sb.AppendLine();
         }
 
         string filePath = Path.Combine(RuntimeDirectory, "docs.md");

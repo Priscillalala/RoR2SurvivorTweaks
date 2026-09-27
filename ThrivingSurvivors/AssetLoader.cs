@@ -39,7 +39,7 @@ public static class AssetLoader
     }
 
     [UsedImplicitly]
-    [InitDuringStartupPhase(GameInitPhase.PreFrame)]
+    [InitDuringStartupPhase(GameInitPhase.PreSplash)]
     static void WaitForAssets()
     {
         foreach (var internalHandle in requestedAddressableAssets)

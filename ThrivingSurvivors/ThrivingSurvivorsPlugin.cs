@@ -14,6 +14,7 @@ using RoR2;
 using HG.Reflection;
 using ThrivingSurvivors.Merc;
 using RoR2.ContentManagement;
+using ThrivingSurvivors.MercAlt;
 
 [assembly:SearchableAttribute.OptIn]
 
@@ -44,6 +45,6 @@ public class ThrivingSurvivorsPlugin : BaseUnityPlugin
         Prefab.Init();
         LanguageLoader.Init();
         
-        TweakMerc.Init();
+        TweakMercAlt.Init();
     }
 }

@@ -1,5 +1,8 @@
 {
 	"strings": {
-		"MERC_UTILITY_ALT1_DESCRIPTION": "<style=cIsDamage>Stunning</style>. Dash forward. After <style=cIsUtility>1 second</style>, split <style=cIsDamage>800% damage</style> between struck enemies and <style=cIsUtility>Expose</style> them."
+		"KEYWORD_EXPOSE": "<style=cKeywordName>Expose</style><style=cSub>Hitting Exposed enemies reduces all skill cooldowns by <style=cIsUtility>0.5s</style> and deals an additional <style=cIsDamage>+350% damage</style>.",
+		"MERC_SECONDARY_DESCRIPTION": "Quickly slice horizontally twice, dealing <style=cIsDamage>2x230% damage</style>. If airborne, slice vertically instead.",
+		"MERC_UTILITY_ALT1_DESCRIPTION": "<style=cIsDamage>Stunning</style>. Dash forward through enemies. After <style=cIsUtility>1 second</style>, split <style=cIsDamage>800% damage</style> between all victims and <style=cIsUtility>Expose</style> them.",
+		"MERC_SPECIAL_ALT1_DESCRIPTION": "Fire a wind of blades that attack up to <style=cIsDamage>3</style> enemies for <style=cIsDamage>100% damage</style> repeatedly. The last hit <style=cIsUtility>Exposes</style> enemies."
 	}
 }

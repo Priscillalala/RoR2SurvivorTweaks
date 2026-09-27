@@ -20,6 +20,7 @@ public static class LanguageLoader
             const string DIFF_ITEM_OPEN = "\n☂<indent=1.5em>";
             const string DIFF_ITEM_CLOSE = "</indent>";
             defaultStyleSheet.styles.Add(new("GrooveDiffItem", DIFF_ITEM_OPEN, DIFF_ITEM_CLOSE));
+            defaultStyleSheet.styles.Add(new("GrooveQuote", "<i>", "</i>"));
 #if false
             //defaultStyleSheet.styles.Add(new("GrooveDiffItem", "\n☂<indent=1.5em>", "</indent>"));
 

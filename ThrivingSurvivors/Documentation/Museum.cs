@@ -1,13 +1,18 @@
-﻿using HG;
+﻿using EntityStates;
+using EntityStates.Merc;
+using HarmonyLib;
+using HG;
 using HG.GeneralSerializer;
 using JetBrains.Annotations;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
 using RoR2;
 using RoR2.Skills;
+using RoR2.UI;
 using System;
 using System.Collections;
 using System.Runtime.CompilerServices;
+using ThrivingSurvivors.Core;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
@@ -40,6 +45,8 @@ public static class Museum
     [SystemInitializer(typeof(SurvivorCatalog), typeof(BodyCatalog))]
     static void SetupSurvivorDocumentation()
     {
+        Plugin.Harmony.PatchAll(typeof(Museum));
+
         foreach (string survivorName in documentedSurvivorNames)
         {
             SurvivorIndex survivorIndex = SurvivorCatalog.FindSurvivorIndex(survivorName);
@@ -61,17 +68,46 @@ public static class Museum
             foreach (SkillDef skillDef in allSkills)
             {
                 //string keywordToken = string.Format(keywordTokenFormat, skillDef.skillName.ToUpperInvariant());
-                string keywordToken = skillDef.skillNameToken;
-                if (keywordToken.EndsWith("_NAME"))
+                string diffKeywordToken = skillDef.skillNameToken;
+                if (diffKeywordToken.EndsWith("_NAME"))
                 {
-                    keywordToken = keywordToken[..^5];
+                    diffKeywordToken = diffKeywordToken[..^5];
                 }
-                keywordToken = $"GROOVE_{keywordToken}_DIFF";
-                if (Language.english.TokenIsRegistered(keywordToken))
+                diffKeywordToken = $"GROOVE_{diffKeywordToken}_DIFF";
+                if (Language.english.TokenIsRegistered(diffKeywordToken))
                 {
-                    ArrayUtils.ArrayAppend(ref skillDef.keywordTokens, keywordToken);
+                    ArrayUtils.ArrayAppend(ref skillDef.keywordTokens, diffKeywordToken);
                 }
             }
         }
+    }
+
+    [HarmonyILManipulator, HarmonyPatch(typeof(CharacterSelectController), nameof(CharacterSelectController.RebuildLocal))]
+    static void AddSurvivorDiffToOverview(ILContext il)
+    {
+        ILCursor c = new ILCursor(il);
+        int locSurviorDef = -1;
+        c.GotoNext(MoveType.After,
+                x => x.MatchLdloc(out locSurviorDef),
+                x => x.MatchLdfld<SurvivorDef>(nameof(SurvivorDef.descriptionToken)),
+                x => x.MatchCallOrCallvirt<Language>(nameof(Language.GetString))
+                );
+        c.Emit(OpCodes.Ldloc, locSurviorDef);
+        c.EmitDelegate<Func<string, SurvivorDef, string>>((overviewText, survivorDef) =>
+        {
+            string survivorBaseToken = survivorDef.cachedName.ToUpperInvariant();
+
+            string survivorDiffToken  = $"GROOVE_{survivorBaseToken}_DIFF";
+            if (Language.english.TokenIsRegistered(survivorDiffToken))
+            {
+                overviewText = Language.GetString(survivorDiffToken) + "\n\n" + overviewText;
+            }
+            string survivorQuoteToken = $"GROOVE_{survivorBaseToken}_QUOTE";
+            if (Language.english.TokenIsRegistered(survivorQuoteToken))
+            {
+                overviewText = Language.GetString(survivorQuoteToken) + "\n\n" + overviewText;
+            }
+            return overviewText;
+        });
     }
 }
