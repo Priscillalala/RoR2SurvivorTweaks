@@ -1,6 +1,6 @@
 {
 	"strings": {
-		"GROOVE_MERC_QUOTE": "<style=GrooveQuote>Merc is a certified Hopoo Games banger who already plays really well in vanilla. I dislike how easy it is for Merc to spam skills into crowds - the Expose tweak is intended to address that. Focused Assault has also recieved a light rework to be a little weaker into crowds. To compensate, both of Merc's utilities got their cooldowns reduced!</style>",
+		"GROOVE_MERC_QUOTE": "<style=GrooveQuote>Merc is a certified Hopoo Games banger who already plays really well in vanilla. I dislike how easy it is for Merc to spam skills into crowds - the Expose tweak is intended to address that. Focused Assault has also recieved a light rework to be a little weaker into crowds.</style>",
 
 		"GROOVE_MERC_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Expose Cooldown Reduction: <style=cIsUtility>1s</style> ⇒ <style=cIsUtility>0.5s</style></style></style>",
 
@@ -8,12 +8,12 @@
 
 		"GROOVE_MERC_SECONDARY_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Damage: <style=cIsDamage>200%</style> ⇒ <style=cIsDamage>230%</style></style><style=GrooveDiffItem>Air Hop Velocity: <style=cIsUtility>9m/s</style> ⇒ <style=cIsUtility>10m/s</style></style></style>",
 
-		"GROOVE_MERC_UTILITY_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Cooldown: <style=cIsUtility>8s</style> ⇒ <style=cIsUtility>7s</style></style></style>",
+		"GROOVE_MERC_UTILITY_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Cooldown: <style=cIsUtility>8s</style> ⇒ <style=cIsUtility>7.5s</style></style></style>",
 
-		"GROOVE_MERC_UTILITY_ALT1_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Cooldown: <style=cIsUtility>8s</style> ⇒ <style=cIsUtility>7s</style></style><style=GrooveDiffItem>Damage: <style=cIsDamage>700%</style> ⇒ <style=cIsDamage>800%</style></style><style=GrooveDiffItem>Damage is now <style=cIsHealth>split between all victims</style></style></style>",
+		"GROOVE_MERC_UTILITY_ALT1_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Cooldown: <style=cIsUtility>8s</style> ⇒ <style=cIsUtility>7.5s</style></style><style=GrooveDiffItem>Damage: <style=cIsDamage>700%</style> ⇒ <style=cIsDamage>900%</style></style><style=GrooveDiffItem>Damage is now <style=cIsHealth>split between all victims</style></style></style>",
 
-		"GROOVE_MERC_SPECIAL_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Evisceration Duration: <style=cIsUtility>1s</style> ⇒ <style=cIsUtility>1.15s</style> (hits <style=cIsDamage>1 more time</style> at base attack speed)</style><style=GrooveDiffItem>Lingering Invincibility Duration: <style=cIsUtility>0.6s</style> ⇒ <style=cIsUtility>0.4s</style></style><style=GrooveDiffItem>Cooldown begins <style=cIsUtility>after fully eviscerating</style></style><style=GrooveDiffItem><style=cIsUtility>No longer targets allies</style></style><style=GrooveDiffItem>Now prioritizes <style=cIsUtility>Exposed targets</style></style></style>",
+		"GROOVE_MERC_SPECIAL_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Cooldown: <style=cIsUtility>6s</style> ⇒ <style=cIsUtility>6.5s</style></style><style=GrooveDiffItem>Evisceration Duration: <style=cIsUtility>1s</style> ⇒ <style=cIsUtility>1.15s</style> (hits <style=cIsDamage>1 more time</style> at base attack speed)</style><style=GrooveDiffItem>Lingering Invincibility Duration: <style=cIsUtility>0.6s</style> ⇒ <style=cIsUtility>0.4s</style></style><style=GrooveDiffItem>Cooldown begins <style=cIsUtility>after fully eviscerating</style></style><style=GrooveDiffItem><style=cIsUtility>No longer targets allies</style></style><style=GrooveDiffItem>Now prioritizes <style=cIsUtility>Exposed targets</style></style></style>",
 
-		"GROOVE_MERC_SPECIAL_ALT1_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Blades Attack Count: <style=cIsDamage>8</style> ⇒ <style=cIsDamage>7</style></style><style=GrooveDiffItem>Blades attack rate now <style=cIsDamage>scales with attack speed</style></style><style=GrooveDiffItem>Cooldown begins <style=cIsUtility>after casting</style></style><style=GrooveDiffItem>Minor <style=cHumanObjective>vfx and sfx improvements</style></style></style>"
+		"GROOVE_MERC_SPECIAL_ALT1_DIFF": "<style=GrooveDiffKeyword><style=GrooveDiffItem>Cooldown: <style=cIsUtility>6s</style> ⇒ <style=cIsUtility>6.5s</style></style><style=GrooveDiffItem>Blades Attack Count: <style=cIsDamage>8</style> ⇒ <style=cIsDamage>7</style></style><style=GrooveDiffItem>Blades attack rate now <style=cIsDamage>scales with attack speed</style></style><style=GrooveDiffItem>Cooldown begins <style=cIsUtility>after casting</style></style><style=GrooveDiffItem>Animation canceling into your secondary or utility <style=cIsUtility>starts the cooldown immediately</style></style><style=GrooveDiffItem>Minor <style=cHumanObjective>vfx and sfx improvements</style></style></style>"
 	}
 }

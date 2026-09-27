@@ -4,7 +4,7 @@
 
 		"MERC_SECONDARY_DESCRIPTION": "Quickly slice horizontally twice, dealing <style=cIsDamage>2x230% damage</style>. If airborne, slice vertically instead.",
 
-		"MERC_UTILITY_ALT1_DESCRIPTION": "<style=cIsDamage>Stunning</style>. Dash forward through enemies. After <style=cIsUtility>1 second</style>, split <style=cIsDamage>800% damage</style> between all victims and <style=cIsUtility>Expose</style> them.",
+		"MERC_UTILITY_ALT1_DESCRIPTION": "<style=cIsDamage>Stunning</style>. Dash forward through enemies. After <style=cIsUtility>1 second</style>, split <style=cIsDamage>900% damage</style> between all victims and <style=cIsUtility>Expose</style> them.",
 
 		"MERC_SPECIAL_DESCRIPTION": "Attack nearby enemies for <style=cIsDamage>110% damage</style> repeatedly. Target <style=cIsUtility>Exposed</style> enemies first. <style=cIsUtility>You cannot be hit for the duration</style>.",
 

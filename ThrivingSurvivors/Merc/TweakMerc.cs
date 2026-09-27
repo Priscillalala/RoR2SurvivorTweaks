@@ -1,6 +1,8 @@
 ﻿using EntityStates;
 using EntityStates.Merc;
+using EntityStates.Merc.Weapon;
 using HarmonyLib;
+using HG;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
 using RoR2;
@@ -61,9 +63,9 @@ public static class TweakMerc
         #region utility
         new ModifyEntityStateAsync(RoR2_Base_Merc.EntityStates_Merc_FocusedAssaultDash_asset)
         {
-            [nameof(FocusedAssaultDash.delayedDamageCoefficient)] = 8f,
+            [nameof(FocusedAssaultDash.delayedDamageCoefficient)] = 9f,
         };
-        const float UTILITY_CD = 7;
+        const float UTILITY_CD = 7.5f;
         Helpers.ModifyGameAssetAsync<SkillDef>(RoR2_Base_Merc.MercBodyAssaulter_asset, skillDef =>
         {
             skillDef.baseRechargeInterval = UTILITY_CD;
@@ -86,12 +88,16 @@ public static class TweakMerc
             skillDef.baseRechargeInterval = SPECIAL_CD;
         });
 #endif
+        const float SPECIAL_CD = 6.5f;
         Helpers.ModifyGameAssetAsync<SkillDef>(RoR2_Base_Merc.MercBodyEvis_asset, skillDef =>
         {
+            skillDef.baseRechargeInterval = SPECIAL_CD;
             skillDef.isCooldownBlockedUntilManuallyReset = true;
+            ArrayUtils.ArrayAppend(ref skillDef.keywordTokens, "KEYWORD_EXPOSE");
         });
         Helpers.ModifyGameAssetAsync<SkillDef>(RoR2_Base_Merc.MercBodyEvisProjectile_asset, skillDef =>
         {
+            skillDef.baseRechargeInterval = SPECIAL_CD;
             skillDef.beginSkillCooldownOnSkillEnd = true;
         });
         new ModifyEntityStateAsync(RoR2_Base_Merc.EntityStates_Merc_Evis_asset)
@@ -229,5 +235,34 @@ public static class TweakMerc
     static void OnExitEvisDash(EvisDash __instance)
     {
         __instance.skillLocator.special.SetBlockedCooldownSkillState(false);
+    }
+
+    [HarmonyPrefix, HarmonyPatch(typeof(ThrowEvisProjectile), nameof(ThrowEvisProjectile.ModifyProjectileInfo))]
+    static void AllowSlicingWindsCancel(ThrowEvisProjectile __instance)
+    {
+        // don't really need this check
+        if (!__instance.isAuthority)
+        {
+            return;
+        }
+        EntityStateMachine outerStateMachine = __instance.outer;
+        EntityStateMachine bodyStateMachine = EntityStateMachine.FindByCustomName(__instance.gameObject, "Body");
+        if (!bodyStateMachine.IsInMainState())
+        {
+            outerStateMachine.SetNextStateToMain();
+        }
+        else
+        {
+            void TryCancelSlicingWinds(EntityStateMachine entityStateMachine, ref EntityState newNextState)
+            {
+                if (outerStateMachine && outerStateMachine.state == __instance)
+                {
+                    outerStateMachine.SetNextStateToMain();
+                }
+                bodyStateMachine.nextStateModifier -= TryCancelSlicingWinds;
+            }
+
+            bodyStateMachine.nextStateModifier += TryCancelSlicingWinds;
+        }
     }
 }
