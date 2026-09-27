@@ -3,6 +3,8 @@ using RoR2;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
+namespace ThrivingSurvivors;
+
 public static class AssetLoader
 {
     public readonly struct AddressableAssetHandle<TObject>(AsyncOperationHandle<TObject> internalHandle) where TObject : Object

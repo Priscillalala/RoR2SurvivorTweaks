@@ -3,6 +3,8 @@ using RoR2;
 using ThrivingSurvivors.Core;
 using TMPro;
 
+namespace ThrivingSurvivors;
+
 public static class LanguageLoader
 {
     static string languageRootFolder;

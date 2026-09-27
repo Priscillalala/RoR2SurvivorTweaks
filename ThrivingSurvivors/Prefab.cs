@@ -3,6 +3,8 @@ using RoR2;
 using UnityEngine;
 using UnityEngine.Networking;
 
+namespace ThrivingSurvivors;
+
 public static class Prefab
 {
     private static Transform prefabParent;
