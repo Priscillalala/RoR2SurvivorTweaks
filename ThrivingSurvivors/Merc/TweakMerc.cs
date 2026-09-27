@@ -1,5 +1,4 @@
-﻿using BepInEx;
-using EntityStates;
+﻿using EntityStates;
 using EntityStates.Merc;
 using HarmonyLib;
 using Mono.Cecil.Cil;
@@ -7,13 +6,10 @@ using MonoMod.Cil;
 using RoR2;
 using RoR2.Projectile;
 using RoR2.Skills;
-using System;
 using ThrivingSurvivors.Core;
 using ThrivingSurvivors.Core.Components;
 using ThrivingSurvivors.Documentation;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace ThrivingSurvivors.Merc;
 
@@ -38,6 +34,7 @@ public static class TweakMerc
         #endregion
 
         #region secondary
+#if false
         const float SECONDARY_CD = 3;
         Helpers.ModifyGameAssetAsync<SkillDef>(RoR2_Base_Merc.MercBodyWhirlwind_asset, skillDef =>
         {
@@ -47,6 +44,7 @@ public static class TweakMerc
         {
             skillDef.baseRechargeInterval = SECONDARY_CD;
         });
+#endif
         static void SetWhirlwindDamage(string key) => new ModifyEntityStateAsync(key)
         {
             [nameof(WhirlwindBase.baseDamageCoefficient)] = 2.3f,
@@ -54,17 +52,30 @@ public static class TweakMerc
         SetWhirlwindDamage(RoR2_Base_Merc.EntityStates_Merc_WhirlwindBase_asset); // prob does nothing
         SetWhirlwindDamage(RoR2_Base_Merc.EntityStates_Merc_WhirlwindGround_asset);
         SetWhirlwindDamage(RoR2_Base_Merc.EntityStates_Merc_WhirlwindAir_asset);
+        new ModifyEntityStateAsync(RoR2_Base_Merc.EntityStates_Merc_WhirlwindAir_asset)
+        {
+            [nameof(WhirlwindBase.smallHopVelocity)] = 10f,
+        };
         #endregion
 
         #region utility
         new ModifyEntityStateAsync(RoR2_Base_Merc.EntityStates_Merc_FocusedAssaultDash_asset)
         {
-            //[nameof(FocusedAssaultDash.delayPerHit)] = .25f,
             [nameof(FocusedAssaultDash.delayedDamageCoefficient)] = 8f,
         };
+        const float UTILITY_CD = 7;
+        Helpers.ModifyGameAssetAsync<SkillDef>(RoR2_Base_Merc.MercBodyAssaulter_asset, skillDef =>
+        {
+            skillDef.baseRechargeInterval = UTILITY_CD;
+        });
+        Helpers.ModifyGameAssetAsync<SkillDef>(RoR2_Base_Merc.MercBodyFocusedAssault_asset, skillDef =>
+        {
+            skillDef.baseRechargeInterval = UTILITY_CD;
+        });
         #endregion
 
         #region special
+#if false
         const float SPECIAL_CD = 7;
         Helpers.ModifyGameAssetAsync<SkillDef>(RoR2_Base_Merc.MercBodyEvis_asset, skillDef =>
         {
@@ -74,17 +85,20 @@ public static class TweakMerc
         {
             skillDef.baseRechargeInterval = SPECIAL_CD;
         });
+#endif
+        Helpers.ModifyGameAssetAsync<SkillDef>(RoR2_Base_Merc.MercBodyEvis_asset, skillDef =>
+        {
+            skillDef.isCooldownBlockedUntilManuallyReset = true;
+        });
+        Helpers.ModifyGameAssetAsync<SkillDef>(RoR2_Base_Merc.MercBodyEvisProjectile_asset, skillDef =>
+        {
+            skillDef.beginSkillCooldownOnSkillEnd = true;
+        });
         new ModifyEntityStateAsync(RoR2_Base_Merc.EntityStates_Merc_Evis_asset)
         {
             [nameof(Evis.duration)] = 1.15f,
             [nameof(Evis.lingeringInvincibilityDuration)] = 0.4f,
         };
-#if false
-        Helpers.ModifyGameAssetAsync<GameObject>(RoR2_Base_Merc.EvisOverlapProjectile_prefab, EvisOverlapProjectile =>
-        {
-            
-        });
-#endif
         Helpers.ModifyGameAssetAsync<GameObject>(RoR2_Base_Merc.ImpactMercEvis_prefab, ImpactMercEvis =>
         {
             new AddComponent<RandomlyOffsetRotation>(ImpactMercEvis)
@@ -118,7 +132,22 @@ public static class TweakMerc
                 c = { finalHitDamageType = DamageType.ApplyMercExpose, lifetime = 1f, finalHitEffect = windsFinalHitImpact }
             };
         };
-#endregion
+        #endregion
+    }
+
+    [HarmonyILManipulator, HarmonyPatch(typeof(HealthComponent), nameof(HealthComponent.TakeDamageProcess))]
+    static void ExposeNerf(ILContext il)
+    {
+        ILCursor c = new ILCursor(il);
+        c.GotoNext(MoveType.After,
+            x => x.MatchLdsfld(typeof(RoR2Content.Buffs), nameof(RoR2Content.Buffs.MercExpose)),
+            x => x.MatchCallOrCallvirt<CharacterBody>(nameof(CharacterBody.RemoveBuff))
+            );
+        c.GotoNext(MoveType.Before,
+                x => x.MatchLdcR4(out _),
+                x => x.MatchCallOrCallvirt<SkillLocator>(nameof(SkillLocator.DeductCooldownFromAllSkillsServer))
+                );
+        c.Next.Operand = 0.5f;
     }
 
     [HarmonyILManipulator, HarmonyPatch(typeof(EvisDash), nameof(EvisDash.FixedUpdate))]
@@ -181,9 +210,24 @@ public static class TweakMerc
         return false;
     }
 
+    // TODO: don't hardcode the special skill slot
+
+    [HarmonyPrefix, HarmonyPatch(typeof(Evis), nameof(Evis.OnEnter))]
+    static void OnEnterEvis(Evis __instance)
+    {
+        __instance.skillLocator.special.SetBlockedCooldownSkillState(true);
+    }
+
     [HarmonyPrefix, HarmonyPatch(typeof(Evis), nameof(Evis.OnExit))]
-    static void CleanEvisTargetStorage(Evis __instance)
+    static void OnExitEvis(Evis __instance)
     {
         evisTargetStorage.Remove(__instance);
+        __instance.skillLocator.special.SetBlockedCooldownSkillState(false);
+    }
+
+    [HarmonyPrefix, HarmonyPatch(typeof(EvisDash), nameof(EvisDash.OnExit))]
+    static void OnExitEvisDash(EvisDash __instance)
+    {
+        __instance.skillLocator.special.SetBlockedCooldownSkillState(false);
     }
 }

@@ -1,36 +1,23 @@
-# Risk of Waiting
-Load the game faster, thanks to some good old-fashioned optimization and caching!
+# Survivors to groove with\~move with\~win with\~lose with\~loop with\~rush with\~loot with\~charge the teleporter with\~fall in love with
+Survivors, tweaked by yours truly. Currently just Mercenary.. maybe just Mercenary forever..
 
-Risk of Waiting makes no meaningful changes to startup functionality, and is intended to be compatible with every mod.
+## Context
+I've mostly been playing [2R4R's](https://thunderstore.io/c/riskofrain2/p/RiskOfBrainrot/2R4R/) Extinction difficulty lately. Extinction really emphasizes crowd control so some of my balancing choices might reflect that.
 
-## Cache Files
-This mod stores cache files in your Risk of Rain 2 folder, under `/RiskofWaitingReduxData/`. They are tiny files (>1 KB per mod) and always safe to delete.
-
-## Overview
-A brief overview of the improvements included in this mod, for fellow mod devs and other interested persons. See the source code at https://github.com/Priscillalala/RiskOfWaitingRedux (MIT licensed)
-
-Process | Problem | Improvement
--|-|-
-PostProcessManager* | Scans EVERY assembly in the domain for post process effects | Only scan assemblies that reference Unity.Postprocessing.Runtime; exclude MMHOOK assemblies
-EntityStateCatalog | Waits for the next frame too often while applying entity state configurations | Yield less often
-SearchableAttribute | Uses a lot of reflection to scan types and members for attributes | Cache the search
-ConVars | Uses a lot of reflection to scan fields and methods for ConVars | Cache the search
-
-*<sub>This mod also includes a cache system for the PostProcessManager; however, the performance gains are nominal compared to any other improvement</sub>
-
-Additionally, the following AchievementManager improvements were originally built for this mod but got added to RoR2BepInExPack instead. See the PR at https://github.com/risk-of-thunder/RoR2BepInExPack/pull/48
-
-Process | Problem | Improvement
--|-|-
-AchievementManager | Waits for the next frame after processing EACH achievement type | Yield each time 100 achievements are registered
-AchievementManager | Scans assemblies which will never contain achievements | Only scan assemblies that reference RoR2; exclude MMHOOK assemblies and RoR2BepInExPack
+## Changes
+The following information is also **available in-game**, on the character select screen! Skill changes are listed in the `Skills` tab when hovering over each skill, and other changes are listed in the `Overview` tab.
 
 ## Contact
-You can find me in the [RoR2 Modding Server](https://discord.gg/5MbXZvd) @groove_salad
+Please share any feedback or ideas you have; I would really appreciate it! I have blind spots, even for survivors I play a lot.
 
-Or, you can post issues and feedback on the [GitHub](https://github.com/Priscillalala/RiskOfWaitingRedux/issues)
+You can find me in the [RoR2 Modding Server](https://discord.gg/5MbXZvd): @groove_salad
+
+Or, you can post issues and feedback on the [GitHub](https://github.com/Priscillalala/RoR2SurvivorTweaks/issues).
+
+## Thanks
+This mod was inspired by Borbo's work, especially [FruitySurvivorTweaks](https://thunderstore.io/c/riskofrain2/p/RiskOfBrainrot/FruitySurvivorTweaks/). Thank you to all the wonderful Plumicord people!
 
 ## Donations
-If this mod saved a few minutes of your life, consider [buying me a coffee](https://www.buymeacoffee.com/groovesalad)!
+If you have fun with this mod, consider [buying me a coffee](https://www.buymeacoffee.com/groovesalad)!
 
 <a href="https://www.buymeacoffee.com/groovesalad" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height=60 width=217></a>

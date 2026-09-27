@@ -91,7 +91,7 @@ public class ThrivingSurvivorsDocsGenPlugin : BaseUnityPlugin
                 sbFile.AppendLine();
             }
             sbFile.AppendLine("<details>");
-            sbFile.AppendLine("<summary>Expand to see details</summary>");
+            sbFile.AppendLine("<summary>Expand details..</summary>");
             sbFile.AppendLine();
             sbFile.Append(detailsString);
             sbFile.AppendLine("</details>");

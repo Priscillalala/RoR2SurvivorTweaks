@@ -1,20 +1,10 @@
-﻿using BepInEx;
-using EntityStates;
-using EntityStates.Merc;
+﻿using EntityStates.Merc;
 using HarmonyLib;
 using HG;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
-using RoR2;
 using RoR2.Orbs;
-using RoR2.Projectile;
-using RoR2.Skills;
-using System;
-using ThrivingSurvivors.Core;
-using ThrivingSurvivors.Core.Components;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
-using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace ThrivingSurvivors.Merc;
 
@@ -55,22 +45,4 @@ public static class FocusedAssaultPatch
             }
         }
     }
-
-#if false
-    [HarmonyILManipulator, HarmonyPatch(typeof(FocusedAssaultDash), nameof(FocusedAssaultDash.OnMeleeHitAuthority))]
-    static void FocusedAssaultDamageReduction(ILContext il)
-    {
-        ILCursor c = new ILCursor(il);
-        c.GotoNext(MoveType.After,
-                x => x.MatchLdarg(0),
-                x => x.MatchLdfld<FocusedAssaultDash>(nameof(FocusedAssaultDash.delayedDamageCoefficient)),
-                x => x.MatchMul()
-                );
-        c.Emit(OpCodes.Ldarg_0);
-        c.EmitDelegate<Func<float, FocusedAssaultDash, float>>((damageValue, state) =>
-        {
-            return damageValue * Mathf.Pow(.85f, state.currentHitCount - 1);
-        });
-    }
-#endif
 }

@@ -1,8 +1,8 @@
 {
-	"name": "RiskOfWaiting",
-	"version_number": "2.0.1",
-	"website_url": "https://github.com/Priscillalala/RiskOfWaitingRedux",
-	"description": "Launch the game posthaste with these sexy startup optimizations",
+	"name": "Survivors_to_groove_with_move_with_win_with_lose_with_loop_with_rush_with_loot_with_charge_the_teleporter_with_fall_in_love_with",
+	"version_number": "0.1.0",
+	"website_url": "https://github.com/Priscillalala/RoR2SurvivorTweaks",
+	"description": "Survivors, tweaked by yours truly.. just merc rn",
 	"dependencies": [
 		"bbepis-BepInExPack-5.4.2121"
 	]
