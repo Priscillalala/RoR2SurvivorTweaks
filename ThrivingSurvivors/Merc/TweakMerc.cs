@@ -22,7 +22,7 @@ public static class TweakMerc
     public static void Init()
     {
         LanguageLoader.RequestLanguageFile("MercOverrides.json");
-        LanguageLoader.RequestLanguageFile("MercDocs.json");
+        LanguageLoader.RequestLanguageDocsFile("MercDocs.json");
         Museum.RequestDocsForSurvivor("Merc");
 
         Plugin.Harmony.PatchAll(typeof(TweakMerc));

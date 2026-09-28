@@ -8,11 +8,14 @@ namespace ThrivingSurvivors;
 public static class LanguageLoader
 {
     static string languageRootFolder;
-    static readonly HashSet<string> requestedLanguageFileNames = [];
+    static string languageDocsRootFolder;
+    static readonly List<string> requestedLanguageFileNames = [];
+    static readonly List<string> requestedLanguageDocsFileNames = [];
 
     public static void Init()
     {
         languageRootFolder = Path.Combine(Plugin.RuntimeDirectory, "Language");
+        languageDocsRootFolder = Path.Combine(Plugin.RuntimeDirectory, "LanguageDocs");
         Plugin.Harmony.PatchAll(typeof(LanguageLoader));
 
         Helpers.ModifyGameAssetAsync<TMP_StyleSheet>(TextMesh_Pro_FormerResources.TMP_Default_Style_Sheet_asset, defaultStyleSheet =>
@@ -37,29 +40,44 @@ public static class LanguageLoader
         requestedLanguageFileNames.Add(fileName);
     }
 
+    public static void RequestLanguageDocsFile(string fileName)
+    {
+        requestedLanguageDocsFileNames.Add(fileName);
+    }
+
     // Same as using Language.collectLanguageRootFolders, but we need to add our overrides after the ror2 strings
     [HarmonyPostfix, HarmonyPatch(typeof(Language), nameof(Language.GetLanguageRootFolders))]
     static void AddOverrideLanguageRootFolders(List<string> __result)
     {
         __result.Add(languageRootFolder);
+        __result.Add(languageDocsRootFolder); // docs don't need to be overrides but we might as well add them here too
     }
 
     [HarmonyPrefix, HarmonyPatch(typeof(Language), nameof(Language.LoadAllTokensFromFolder))]
     static bool LoadRequestedLanguageFiles(string folder, List<KeyValuePair<string, string>> output)
     {
-        string rootFolder = Path.GetDirectoryName(folder);
-        if (rootFolder != languageRootFolder)
+        void LoadTokensFromRequestedLanguageFiles(List<string> requestedLanguageFileNames)
         {
-            return true;
-        }
-        foreach (string filePath in Directory.EnumerateFiles(folder))
-        {
-            string fileName = Path.GetFileName(filePath);
-            if (requestedLanguageFileNames.Contains(fileName))
+            foreach (string requestedFileName in requestedLanguageFileNames)
             {
-                Language.LoadTokensFromData(File.ReadAllText(filePath), output);
+                string requestedFilePath = Path.Combine(folder, requestedFileName);
+                if (File.Exists(requestedFilePath))
+                {
+                    Language.LoadTokensFromData(File.ReadAllText(requestedFilePath), output);
+                }
             }
         }
-        return false;
+        string rootFolder = Path.GetDirectoryName(folder);
+        if (rootFolder == languageRootFolder)
+        {
+            LoadTokensFromRequestedLanguageFiles(requestedLanguageFileNames);
+            return false;
+        }
+        if (rootFolder == languageDocsRootFolder)
+        {
+            LoadTokensFromRequestedLanguageFiles(requestedLanguageDocsFileNames);
+            return false;
+        }
+        return true;
     }
 }

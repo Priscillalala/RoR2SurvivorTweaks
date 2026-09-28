@@ -46,6 +46,9 @@
 		<None Include="Language\**">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
+		<None Include="LanguageDocs\**">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
 	</ItemGroup>
 
 	<Target Name="DeleteDeps" AfterTargets="PostBuildEvent">
